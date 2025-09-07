@@ -1,0 +1,19 @@
+ionic start HelpDeskAssistant.Mobile sidemenu --type=angular --capacitor 
+
+npm install @azure/msal-browser @azure/msal-angular@latest
+
+//Build Web
+=============
+ionic build 
+
+Create the chat UI
+​===================
+npm install stream-chat-angular stream-chat @ngx-translate/core
+
+Add this to your tsconfig.json file to the compilerOptions part:
+
+"allowSyntheticDefaultImports": true
+
+Import CSS in your global.scss file:
+
+@import "~stream-chat-angular/src/assets/styles/scss/index.scss";

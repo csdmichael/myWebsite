@@ -1,0 +1,83 @@
+
+<ion-toolbar>
+  <ion-grid wrap class="appHeader">
+    <ion-row>
+      <ion-col size="9" style="text-align: left;">
+        <table style="width:100%">
+          <tr>
+            @if (ShowMenu == true) {
+              <td style="vertical-align: top;" (click)="toggleMenu()">
+                <ion-menu-toggle [autoHide]="false">
+                  <ion-icon name="menu"  style="zoom:3.0;"></ion-icon>
+                </ion-menu-toggle>
+              </td>
+            }
+            @if (!ShowMenu && ParentPage == null && !HideHome) {
+              <td style="vertical-align: top;" (click)="goToPreviousPage()">
+                <ion-icon name="home" style="zoom:4.0;"></ion-icon>
+              </td>
+            }
+            @if (ParentPage != null) {
+              <td style="vertical-align: top;" (click)='goBack()'>
+                <ion-icon name="arrow-back" style="zoom:2.0"></ion-icon>
+              </td>
+            }
+            <td>
+              &nbsp;&nbsp;&nbsp;
+            </td>
+            <td style="width:90%; vertical-align: top;">
+              <span class="headerText">
+                {{CurrDate}}&nbsp;{{CurrTime}}&nbsp;{{TimeZoneId}}
+              </span>
+              <br/>
+              @if (UserName !== null && UserName !== undefined) {
+                <span class="headerText">
+                  Welcome {{UserName}}
+                </span>
+              }
+            </td>
+          </tr>
+        </table>
+      </ion-col>
+      <ion-col size="3" style="text-align: right;">
+        <div style="width: 100%; text-align: right;">
+          <table style="width: 100%; text-align: right;">
+            <tr>
+              <td>
+                <ion-icon name="refresh" size="large" (click)="refresh()" style="cursor: pointer;"></ion-icon>
+              </td>
+              @if (showChat) {
+                <td>
+                  <img src="../assets/icon/feedback.png" style="cursor: pointer;" height="50" width="50" (click)="goToChat()"/>
+                </td>
+              }
+              <td>
+                
+              </td>
+            </tr>
+          </table>
+
+        </div>
+
+      </ion-col>
+    </ion-row>
+
+  </ion-grid>
+  <ion-grid wrap class="pageTitle">
+    <ion-row>
+      <ion-col col-12 style="text-align: center;">
+        <div class='pageTitle'>
+          {{PageTitle}}
+        </div>
+      </ion-col>
+    </ion-row>
+    @if (PageDisclaimer != null && PageDisclaimer != undefined) {
+      <ion-row>
+        <ion-col class="disclaimerTopClass">
+          <b>Disclaimer:</b> {{PageDisclaimer}}
+        </ion-col>
+      </ion-row>
+    }
+  </ion-grid>
+  <ion-buttons slot="end"></ion-buttons>
+</ion-toolbar>

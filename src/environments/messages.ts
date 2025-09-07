@@ -1,0 +1,20 @@
+export const AppMessages = {
+    CHECKIN_SUCCESS: '{0} checked in successfully.',
+    CHECKIN_VEHICLES_VALIDATE: '# Vehicles in restricted area should be greater than or equal zero.',
+    CHECKIN_OTHERPUPOSE_VALIDATE : 'Please type in purpose of visit.',
+    CHECKIN_OTHERPUPOSE_REQUIRED: 'Purpose of visit is required.',
+    CHECKOUT_SUCCESS: '{0} checked out successfully.',
+    REGISTER_SUCCESS: 'Account created successfully.',
+    REGISTER_ERROR_ALREADYEXISTS: 'User already exists.',
+    REGISTER_CAI_VALIDATE: 'CAI must be 4-6 characters length.\r\n',
+    REGISTER_COMPANY_VALIDATE: 'Company must be populated.\r\n',
+    REGISTER_GUEST_VALIDATE: 'Guest type must be populated.\r\n',
+    REGISTER_EMAIL_VALIDATE: 'Invalid Email format.\r\n',
+    REGISTER_EMAIL_REQUIRED: 'Email is required.\r\n',
+    REGISTER_PHONE_VALIDATE: 'Mobile Number must be at least 10 digits.\r\n',
+    REGISTER_PIN_VALIDATE: 'PIN and confirm PIN does not match.\r\n',
+    ADMIN_EMAIL_SUCCESS: 'Report has been sent to your email.',
+    ADMIN_EMAIL_WIP: 'Email functionality is still work in progress...',
+    ADMIN_EXPORT_ERROR: 'Error in export report.',
+    ACCEPT_TERMS_CONDICTION: 'You must agree to the Terms & Conditions to continue.'
+}

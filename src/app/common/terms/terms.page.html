@@ -1,0 +1,55 @@
+<ion-header>
+  <app-header [ShowMenu]="showMenu" [HideHome]=true
+  [IsSetup]="!showMenu" [PageTitle]="'Terms & Conditions'"></app-header>
+</ion-header>
+@if (showMenu) {
+  <ion-menu contentId="main-content" type="overlay">
+    <app-admin-menu></app-admin-menu>
+  </ion-menu>
+}
+<ion-content class="pageClass">
+  <ion-grid>
+    <ion-row>
+      <p style="font-size: medium; color: black;">These Terms of Use apply to your access to and use of all or part of this
+        website or mobile application ("Site") of Chevron Corporation or an affiliated company ("Chevron"). As
+        used throughout this website, the term "Chevron" and such terms as "the company," "legal entity," "the
+        corporation," "our," "we" and "us" may refer to Chevron Corporation or one or more or all of Chevron
+        Corporation's consolidated subsidiaries or non-consolidated affiliates. All of these terms are used for
+        convenience only and are not intended as a precise designation of any of the separate companies, each of
+        which manages its own affairs. By accessing or using this Site, you agree to be bound by these Terms of
+        Use and all terms incorporated by reference. If you do not agree to all of these Terms of Use, do not
+      use this Site.</p>
+    </ion-row>
+    <ion-row>
+      <ion-text color="primary">
+        <h2>Disclaimer</h2>
+      </ion-text>
+    </ion-row>
+    <ion-row>
+      <p style="font-size: medium; color: black;">The materials in this Site are provided "as is" and without warranties of any
+        kind either express or implied. To the fullest extent permissible pursuant to applicable law, Chevron
+        disclaims all warranties, express or implied, including, but not limited to, implied warranties of
+        merchantability and fitness for a particular purpose. Chevron does not warrant that the functions
+        contained in the materials will be uninterrupted or error-free, that defects will be corrected, or that
+        this Site or the server that makes it available are free of viruses or other harmful components. Chevron
+        does not make any representations or warranties regarding the use or the results of the use of the
+        materials in this Site in terms of their correctness, accuracy, reliability, or otherwise. Applicable
+      law may not allow the exclusion of implied warranties, so the above exclusion may not apply to you.</p>
+    </ion-row>
+    <ion-row>
+      <ion-col text-center size="6">
+        <ion-button class="button-blue"  ion-button size="small" (click)="agree()" expand="block">
+          Agree
+        </ion-button>
+      </ion-col>
+      <ion-col text-center size="6">
+        <ion-button class="button-red" ion-button color="danger" (click)="disagree()" size="small" expand="block">
+          Disagree
+        </ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
+<ion-footer>
+  <app-footer></app-footer>
+</ion-footer>

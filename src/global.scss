@@ -1,0 +1,642 @@
+/*
+ * App Global CSS
+ * ----------------------------------------------------------------------------
+ * Put style rules here that you want to apply globally. These styles are for
+ * the entire app and not just one component. Additionally, this file can be
+ * used as an entry point to import other CSS/Sass files to be included in the
+ * output CSS.
+ * For more information on global stylesheets, visit the documentation:
+ * https://ionicframework.com/docs/layout/global-stylesheets
+ */
+
+/* Core CSS required for Ionic components to work properly */
+@import "@ionic/angular/css/core.css";
+
+/* Basic CSS for apps built with Ionic */
+@import "@ionic/angular/css/normalize.css";
+@import "@ionic/angular/css/structure.css";
+@import "@ionic/angular/css/typography.css";
+@import '@ionic/angular/css/display.css';
+
+/* Optional CSS utils that can be commented out */
+@import "@ionic/angular/css/padding.css";
+@import "@ionic/angular/css/float-elements.css";
+@import "@ionic/angular/css/text-alignment.css";
+@import "@ionic/angular/css/text-transformation.css";
+@import "@ionic/angular/css/flex-utils.css";
+
+::-webkit-scrollbar,
+*::-webkit-scrollbar {
+  display: none;
+}
+
+.button-blue-fixed {
+  font-family: Gotham !important;
+  font-size: 16pt !important;
+  color: white !important;
+  letter-spacing: 0.58px !important;
+  text-align: center !important;
+  height: 100%;
+  width: 90%;
+  --background: #0B2D71;
+}
+
+.button-mediumblue-fixed {
+  font-family: Gotham !important;
+  font-size: 16pt !important;
+  color: white !important;
+  letter-spacing: 0.58px !important;
+  text-align: center !important;
+  height: 100%;
+  width: 90%;
+  --background: rgb(0, 102, 178);
+  --size: large;
+}
+
+.classCenter {
+  text-align: center !important;
+}
+
+.button-blue {
+  font-family: Gotham !important;
+  font-size: 16pt !important;
+  color: white !important;
+  letter-spacing: 0.58px !important;
+  text-align: center !important;
+  --background: #0B2D71;
+  --size: small;
+}
+.button-mediumblue {
+  font-family: Gotham !important;
+  font-size: 16pt !important;
+  color: white !important;
+  letter-spacing: 0.58px !important;
+  text-align: center !important;
+  --background: rgb(0, 102, 178);
+  --size: small;
+}
+.button-red {
+  font-family: Gotham !important;
+  font-size: 16pt !important;
+  color: white !important;
+  letter-spacing: 0.58px !important;
+  text-align: center !important;
+  background-color: red !important;
+  --size: small;
+}
+
+.button-small {
+  font-family: Gotham !important;
+  font-size: 10pt !important;
+  color: white !important;
+  letter-spacing: 0.58px !important;
+  text-align: center !important;
+  --background: black;
+  --size: small;
+}
+
+.submodule-menu{
+  color:white;
+  font-weight: 550;
+}
+
+.divider-light{
+  background-color: transparent!important;
+  background: transparent!important;
+  border-bottom: 1px solid #808289!important;
+  color: white!important;
+}
+
+.divider-row{
+  border-bottom: 1px solid #808289!important;
+}
+
+.cell-header-padded{
+  padding: 5px!important;
+  background-color: #0B2D71!important;
+  color: white !important;
+  font-size: medium!important;
+  text-align: center!important;
+  vertical-align: middle!important;
+}
+
+.cell-padded{
+  padding: 5px!important;
+  background-color: whitesmoke !important;
+  color: black !important;
+  font-size: small!important;
+  text-align: center!important;
+  vertical-align: middle!important;
+}
+
+.row-master{
+  background-color: whitesmoke !important;
+  color: black !important;
+  border-bottom: 1px solid #808289!important;
+}
+
+.cell-padded-active{
+  padding: 5px!important;
+  background-color: whitesmoke !important;
+  color: #769231 !important;
+  font-size: small!important;
+  text-align: center!important;
+  vertical-align: middle!important;
+}
+.cell-padded-inactive{
+  padding: 5px!important;
+  background-color: whitesmoke !important;
+  color: #92949c !important;
+  font-size: small!important;
+  text-align: center!important;
+  vertical-align: middle!important;
+}
+.cell-border{
+  border-bottom: .5px solid #d7d8da;
+}
+
+.cell-full-border {
+  border-color: gray; 
+  border-style:solid; 
+  border-width:1pt;
+}
+
+.search-control {
+  background-color: lightsteelblue; 
+  border: solid; 
+  border-color: gray;
+  border-width:1pt;
+}
+
+.row-highlight {
+  border-color: lightgray; 
+  border-style:solid; 
+  border-width:1pt;
+}
+
+.tableHeaderClass {
+  width: 100%;
+  font-weight: bold;
+  background-color: #0B2D71;
+  color: white;
+  font-size: 14px;
+  vertical-align: top;
+  text-align: left;
+}
+
+.tableHeaderBlackClass {
+  width: 100%;
+  font-weight: bold;
+  background-color: black;
+  color: white;
+  font-size: small;
+  vertical-align: top;
+  text-align: left;
+}
+
+.cellHeaderBlackClass {
+  width: 100%;
+  height: 100%;
+  font-weight: bold;
+  background-color: black;
+  color: white;
+  font-size: 12px;
+  text-align: left;
+}
+
+.cellHeaderSmokeClass {
+  width: 100%;
+  height: 100%;
+  font-weight: bold;
+  background-color: whitesmoke;
+  color: black;
+  font-size: small;
+  text-align: left;
+  border-color: gray; 
+  border-style:solid; 
+  border-width:1pt;
+}
+
+.tableHeaderRedClass {
+  width: 100%;
+  height: 100%;
+  font-weight: bold;
+  background-color: red;
+  color: white;
+  font-size: small;
+  vertical-align: top;
+  text-align: left;
+}
+
+.tableClass {
+  width: 100%;
+  height: 100%;
+  word-wrap: break-word;
+  font-size: small;
+  color: black;
+  background-color: whitesmoke;
+  border-bottom: medium;
+  border-color: black;
+}
+
+.appFooter {
+  background-color: #0B2D71;
+  font-size: small;
+  color: white;
+}
+.appHeader {
+  background-color: #0B2D71;
+  font-size: small;
+  color: white;
+}
+
+.pageClass {
+  --background: whitesmoke;
+  text-align: center;
+  background-color: whitesmoke;
+}
+
+.pageTitle {
+  color: #0B2D71;
+  font-weight: 500;
+  text-align: center;
+  font-size: x-large;
+}
+
+.ion-label-form {
+  font-weight: bold;
+  margin-right: 20px;
+}
+.menuClass {
+  background-color: #0B2D71;
+  color: white;
+  height: 100vh;
+  width: 100%;
+  overflow: scroll;
+}
+
+.menuItemClass {
+  background-color: transparent;
+  --background: transparent;
+  color: white;
+}
+
+.autocompleteClass {
+  background: whitesmoke;
+  color: #0B2D71;
+  width: 100%;
+}
+
+.cardClass {
+  display: flex;
+  max-height: 100%;
+  flex-direction: column;
+  height: 100%;
+}
+
+.cardLightBlueClass {
+  background: rgb(0, 157, 217);
+}
+
+.cardFeedback {
+  background: whitesmoke;
+  padding-left: 1%;
+  color: black;
+}
+
+.cardLightGrey {
+  background: rgb(237, 237, 238);
+}
+
+.loginTextClass {
+  color: #0B2D71;
+  font-size: large;
+}
+
+.cardList {
+  overflow: hidden;
+  overflow-y: auto;
+  ::-webkit-scrollbar {
+    display: none;
+  }
+  padding: 0px;
+  margin: 0px;
+  --padding-end: 0px;
+  --padding-bottom: 0px;
+}
+
+.listHeader {
+  padding: 0px;
+  margin: 0px;
+  --padding-end: 0px;
+  --padding-top: 0px;
+  --padding-bottom: 0px;
+}
+
+.noPadding {
+  padding: 0px;
+  margin: 0px;
+  --padding-end: 0px;
+  --padding-top: 0px;
+  --padding-bottom: 0px;
+}
+
+.tabsClass {
+  display: flex;
+}
+
+.disclaimerClass {
+  background-color: yellow;
+  color: black;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  padding-left: 1%;
+  padding-right: 1%;
+  border-color: gray; 
+  border-style:solid; 
+  border-width:1pt;
+}
+
+.disclaimerTopClass {
+  background-color: yellow;
+  color: black;
+  padding-top: 0%;
+  padding-bottom: 0%;
+  padding-left: 1%;
+  padding-right: 1%;
+  border-color: gray; 
+  border-style:solid; 
+  border-width:1pt;
+  font-size: 14px;
+}
+
+.loginHeader {
+  color: white;
+}
+
+.searchbarClass {
+  background: white;
+  --background: white;
+  width: 100%;
+  font-size: small;
+}
+
+.linkClass {
+  color: white;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.tabActive {
+  background: #0B2D71;
+  font-weight: bold;
+  color: white;
+  width: 100%;
+  height: 100%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  align-items: center;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+.tabInactive {
+  background: rgb(237, 237, 238);
+  color: #0B2D71;
+  width: 100%;
+  height: 100%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  align-items: center;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+.alert-cancel-button {
+  color: var(--ion-color-danger) !important;
+}
+
+.headerText {
+  color: white;
+}
+
+.footerText {
+  color: white;
+}
+
+.CountHome {
+  font-size: 50pt;
+  font-weight: bold;
+  color: white;
+}
+
+.kpiCountHomeMedium {
+  font-size: 12pt;
+  font-weight: bold;
+  color: white;
+}
+
+.kpiCountHomeSmall {
+  font-size: 11pt;
+  font-weight: bold;
+  color: white;
+}
+
+.CountHomeMedium {
+  font-size: 12pt;
+  font-weight: bold;
+  color: white;
+}
+
+.CountHomeSmall {
+  font-size: 10pt;
+  font-weight: bold;
+  color: white;
+}
+
+.small_button{
+  line-height: 5px !important;
+  min-height: 20px !important;
+}
+
+.LabelHome {
+  font-size: 12px;
+  color: white;
+}
+
+.kpiLabelHome {
+  font-size: 12px;
+  color: white;
+}
+
+.LabelHomeLarge {
+  font-size: 12px;
+  font-weight: bold;
+  color: white;
+}
+
+.LabelHomeSmall {
+  font-size: 9pt;
+  color: white;
+}
+
+.cardHomeCount {
+  background: rgb(0, 157, 217);
+  align-items: center;
+  vertical-align: middle;
+  cursor: pointer;
+  margin: 2px;
+  width: 140pt;
+  height: 120pt;
+}
+
+.cardCert {
+  background: rgb(0, 157, 217);
+  align-items: center;
+  vertical-align: middle;
+  margin: 2px;
+}
+
+.cardAppRatings {
+  background: rgb(0, 157, 217);
+  align-items: center;
+  vertical-align: middle;
+}
+
+.cardRed {
+  background: red;
+  align-items: center;
+  vertical-align: middle;
+  color: white;
+  font-weight: bold;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.cardYellow {
+  background: orange;
+  align-items: center;
+  vertical-align: middle;
+  color: white;
+  font-weight: bold;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.cardGreen {
+  background: green;
+  align-items: center;
+  vertical-align: middle;
+  color: white;
+  font-weight: bold;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.cardHomeKPI {
+  background: skyblue;
+  align-items: center;
+  vertical-align: middle;
+  width: 100pt;
+  height: 95pt;
+  margin: 2px;
+}
+
+.cardAppReview {
+  background: whitesmoke;
+  width: 120pt;
+  margin: 2px;
+  font-size: 11px;
+}
+
+.homeCountDiv {
+  height: 100%;
+}
+
+.underContructionClass {
+  font-size: xx-large;
+  font-weight: bold;
+}
+
+.underlineTitle {
+  font-weight: bold;
+  text-decoration: underline;
+  font-size: medium;
+  color: black;
+}
+
+.underlineCertTitle {
+  font-weight: bold;
+  text-decoration: underline;
+  font-size: 12px;
+}
+
+.kpiIconClass {
+  zoom: 0.25;
+}
+
+.mediumIconClass {
+  zoom: 0.6;
+}
+
+.thumbnail-xsmall {
+  --size: 1.5em;
+  max-width: 8vw;
+  max-height: 8vw;
+}
+
+.thumbnail-medium {
+  --size: 2.5em;
+  max-width: 8vw;
+  max-height: 8vw;
+}
+
+.chatFromBot {
+  font-size: large;
+  font-weight: normal;
+  background-color: whitesmoke;
+  color:black;
+  padding-left: 1%;
+}
+
+.chatChoice {
+  font-size: large;
+  font-weight: normal;
+  background-color: lightsteelblue;
+  color: black !important;
+  padding: 5px;
+  max-height: 100%;
+  flex-direction: column;
+  height: 100%;
+}
+
+.chatChoiceDisabled {
+  font-size: large;
+  font-weight: normal;
+  background-color: lightgrey;
+  color: darkgray !important;
+  padding: 5px;
+  max-height: 100%;
+  flex-direction: column;
+  height: 100%;
+}
+
+.chatFromPerson {
+  font-size: large;
+  font-weight: normal;
+  color: navy;
+  background-color: rgb(212, 228, 230);
+  padding-left: 1%;
+}
+
+.TitleLabel {
+  font-size: large;
+  font-weight: normal;
+  color: navy;
+}

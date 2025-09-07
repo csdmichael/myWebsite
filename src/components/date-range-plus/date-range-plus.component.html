@@ -1,0 +1,21 @@
+<ion-grid style="padding: 0;">
+  <ion-row>
+    @if (showLabel) {
+      <ion-col size="2">
+        <b>Date Range</b>
+      </ion-col>
+    }
+    <ion-col size="4">
+      <ion-select style="min-height: 0px;" [placeholder]="'Select a period'" [value]="selectedPeriodId" okText="Ok" cancelText="Dismiss" (ionChange)="periodIdChanged($event)">
+        @for (p of periodsList; track p) {
+          <ion-select-option [value]="p.Id">{{p.PeriodTitle}}</ion-select-option>
+        }
+      </ion-select>
+    </ion-col>
+    <ion-col size="6">
+      @if (selectedPeriodId == 'C') {
+        <date-range [dateRange]="dateRange" (dateRangeChanged)="onDateRangeEmitted($event)"></date-range>
+      }
+    </ion-col>
+  </ion-row>
+</ion-grid>

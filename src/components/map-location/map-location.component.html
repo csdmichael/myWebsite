@@ -1,0 +1,33 @@
+<ion-card>
+  <agm-map
+    [latitude]="lat"
+    [longitude]="lng"
+    [zoom]="zoom"
+    [disableDefaultUI]="false"
+    [zoomControl]="false"
+    (mapClick)="mapClicked($event)">
+
+    @for (m of markers; track m; let i = $index) {
+      <agm-marker
+        iconUrl="../assets/icon/site.png"
+        (markerClick)="clickedMarker(m.popupLabel, i)"
+        [latitude]="m.lat"
+        [longitude]="m.lng"
+        [label]="m.label"
+        [markerDraggable]="m.draggable"
+        (dragEnd)="markerDragEnd(m, $event)">
+        <agm-info-window>
+          <strong>{{m.popupLabel}}</strong>
+        </agm-info-window>
+      </agm-marker>
+    }
+    <!--
+    <agm-circle [latitude]="lat + 0.3" [longitude]="lng"
+      [radius]="5000"
+      [fillColor]="'red'"
+      [circleDraggable]="true"
+      [editable]="true">
+    </agm-circle>
+    -->
+  </agm-map>
+</ion-card>

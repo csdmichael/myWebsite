@@ -1,0 +1,83 @@
+
+<ion-list id="admin-list" class="menuClass">
+  <ion-list-header>
+    <ion-grid class="menuItemClass">
+      <ion-row>
+        <ion-col size="12">
+          &nbsp;
+        </ion-col>
+      </ion-row>
+      <ion-row>
+
+        <ion-col size="12" style="text-align: center;">
+          <strong>Chevron Pay HDA App</strong><br/>
+          v{{appVersion}}
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size="12"  style="text-align: center;">
+          <ion-item-divider style="background-color: transparent; color: white">
+            Signed in as {{userName}}
+          </ion-item-divider>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size="12">
+          <ion-item-divider style="background-color: lightblue; color: darkblue; font-size: medium">
+            <b>Menu</b>
+          </ion-item-divider>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-list-header>
+  @for (c of appPages; track c) {
+    @if (isAuthorized(c.role)) {
+      <ion-item class="menuItemClass">
+        <ion-grid>
+          @if (c.category != '') {
+            <ion-row (click)="expandCollapse(c)">
+              <ion-col size="8">
+                <span>
+                  <b>{{c.category}}</b>
+                </span>
+              </ion-col>
+              <ion-col size="4" style="text-align: right;">
+                @if (c.isExpanded) {
+                  <ion-icon name="arrow-up" style="zoom:1.5;"></ion-icon>
+                }
+                @if (!c.isExpanded) {
+                  <ion-icon name="arrow-down" style="zoom:1.5"></ion-icon>
+                }
+              </ion-col>
+            </ion-row>
+          }
+          @if (c.isExpanded) {
+            <ion-row>
+              <ion-col size="12">
+                <ion-list class="menuItemClass">
+                  @for (p of c.pages; track p) {
+                    <ion-container>
+                      @if (isAuthorized(p.role) || p.isDisabled) {
+                        <ion-item class="menuItemClass" (click)="goToPage(p)" lines="none" detail="true">
+                          <ion-thumbnail slot="start" style="zoom:0.5;">
+                            <img [src]="p.icon" />
+                          </ion-thumbnail>
+                          @if (!p.isDisabled) {
+                            <span style="color: white">{{ p.title }}</span>
+                          }
+                          @if (p.isDisabled) {
+                            <span style="color: grey">{{ p.title }}</span>
+                          }
+                        </ion-item>
+                      }
+                    </ion-container>
+                  }
+                </ion-list>
+              </ion-col>
+            </ion-row>
+          }
+        </ion-grid>
+      </ion-item>
+    }
+  }
+</ion-list>

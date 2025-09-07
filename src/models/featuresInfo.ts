@@ -1,0 +1,30 @@
+export class FeaturesInfo {
+    Ccc: boolean = false;
+    Extramile: boolean = false;
+    Cstore: boolean = false;
+    Carwash: boolean = false;
+    ServiceBay: boolean = false;
+    TruckStop: boolean = false;
+    Diesel: boolean = false;
+    GiftCard: boolean = false;
+    Nfc: boolean = false;
+    AmazonLocker: boolean = false;
+    MobilePayments: boolean = false;
+    GasRewards: boolean = false;
+    LoyaltyTitle!: string;
+    LoyaltyIcon!: string;
+    Hours!: string;
+    Beer: boolean = false;
+    EmergencyGoods: boolean = false;
+    Coffee: boolean = false;
+    Restroom: boolean = false;
+    Extras: boolean = false;
+    Icee: boolean = false;
+    Network!: string;
+    Pos!: string;
+    Charge: boolean = false;
+    RenewDiesel: boolean = false;
+    StationImage!: string;
+    Fullsvcarwash: boolean = false;
+    CvxReward: boolean = false;
+}
