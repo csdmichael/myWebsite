@@ -1,3 +1,5 @@
+Url: https://claude.ai/public/artifacts/d1fc0ea9-4b80-4448-bf90-120745b87f33
+
 import React, { useState } from 'react';
 import { Mail, Phone, MapPin, Linkedin, Github, Download, Code, Cloud, Database, Award, GraduationCap, Briefcase, ChevronRight, ExternalLink } from 'lucide-react';
 
