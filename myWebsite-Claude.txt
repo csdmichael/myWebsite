@@ -1,0 +1,384 @@
+import React, { useState } from 'react';
+import { Mail, Phone, MapPin, Linkedin, Github, Download, Code, Cloud, Database, Award, GraduationCap, Briefcase, ChevronRight, ExternalLink } from 'lucide-react';
+
+const MichaelYaacobPortfolio = () => {
+  const [activeSection, setActiveSection] = useState('about');
+
+  const skills = {
+    cloud: ['Microsoft Azure', 'Amazon AWS', 'Google GCP', 'Azure OpenAI', 'Azure ML', 'DevOps'],
+    programming: ['C#', 'Python', 'Java', 'TypeScript', 'Angular', 'React', 'Node.js'],
+    ai: ['Generative AI', 'LangChain/LangGraph', 'TensorFlow', 'PyTorch', 'AutoGen', 'CrewAI'],
+    databases: ['SQL Server', 'Azure Data Factory', 'Databricks', 'MongoDB', 'Vector DB', 'Oracle'],
+    frameworks: ['ASP.NET Core', 'Ionic', 'React Native', 'SharePoint', 'Sitecore']
+  };
+
+  const experience = [
+    {
+      company: 'Wipro Technologies',
+      client: 'Chevron',
+      role: 'Principal Full Stack & AI Software Engineer',
+      duration: 'Mar 2021 – Current',
+      achievements: [
+        'Led 11 Mobility & Cloud PaaS Projects with 2.5M+ lines of code',
+        'Ranked top 1-3% of developers for 3 consecutive years',
+        'Built AI/ML solutions for fraud detection and customer segmentation',
+        'Developed chatbots using Azure OpenAI and custom frameworks'
+      ]
+    },
+    {
+      company: 'TechMahindra',
+      client: 'Chevron', 
+      role: 'Principal Mobility & Cloud SWE/Architect',
+      duration: 'Oct 2019 – Mar 2021',
+      achievements: [
+        'Architected mobile applications for downstream operations',
+        'Implemented ML algorithms for customer behavior analysis',
+        'Led cross-platform development using Ionic and Angular'
+      ]
+    },
+    {
+      company: 'Virtusa',
+      client: 'Pratt & Whitney',
+      role: 'Senior Technical Architect',
+      duration: 'Jun 2016 – Oct 2019',
+      achievements: [
+        'Designed cloud migration strategies for SharePoint portals',
+        'Built microservices architecture using Azure Service Fabric',
+        'Implemented ETL pipelines with Apache Spark and Hadoop'
+      ]
+    }
+  ];
+
+  const certifications = [
+    'AWS Certified AI Practitioner (2025)',
+    'UC Berkeley AI/ML Certificate (In Progress)',
+    'Microsoft Azure Solutions Expert',
+    'Project Management Professional (PMP)',
+    'Sitecore Developer Certified'
+  ];
+
+  const projects = [
+    {
+      name: 'Chevron Pay at Pump',
+      description: 'Native mobile app for gas payments with AI fraud detection',
+      tech: ['React Native', 'Azure OpenAI', 'Python', 'TensorFlow']
+    },
+    {
+      name: 'Terminal Check-In System',
+      description: 'Hybrid mobile app digitizing visitor management across US terminals',
+      tech: ['Ionic', 'Angular', 'Azure Functions', 'SQL Azure']
+    },
+    {
+      name: 'HTSA Coptic Mobile App',
+      description: 'Social mobile app for church community with 10K+ users',
+      tech: ['Ionic', 'ASP.NET Core', 'Azure Cloud']
+    }
+  ];
+
+  return (
+    <div className="min-h-screen bg-gradient-to-br from-slate-900 via-blue-900 to-slate-900">
+      {/* Navigation */}
+      <nav className="fixed top-0 w-full bg-black/20 backdrop-blur-lg z-50 border-b border-white/10">
+        <div className="max-w-7xl mx-auto px-6 py-4">
+          <div className="flex justify-between items-center">
+            <div className="text-2xl font-bold text-white">Michael Yaacoub</div>
+            <div className="hidden md:flex space-x-8">
+              {['about', 'experience', 'skills', 'projects', 'contact'].map((section) => (
+                <button
+                  key={section}
+                  onClick={() => setActiveSection(section)}
+                  className={`capitalize transition-colors ${
+                    activeSection === section
+                      ? 'text-cyan-400 border-b-2 border-cyan-400'
+                      : 'text-white/70 hover:text-white'
+                  }`}
+                >
+                  {section}
+                </button>
+              ))}
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      {/* Hero Section */}
+      <section className="pt-24 pb-16 px-6">
+        <div className="max-w-7xl mx-auto">
+          <div className="flex flex-col lg:flex-row items-center gap-12">
+            <div className="lg:w-2/3">
+              <div className="space-y-6">
+                <div className="inline-block">
+                  <span className="bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent text-lg font-semibold">
+                    Principal Software Engineer & Solutions Architect
+                  </span>
+                </div>
+                <h1 className="text-5xl lg:text-6xl font-bold text-white leading-tight">
+                  Building the Future with
+                  <span className="bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent"> AI & Cloud</span>
+                </h1>
+                <p className="text-xl text-white/80 leading-relaxed max-w-2xl">
+                  21 years of expertise in cloud architecture, AI/ML, and full-stack development. 
+                  Currently pursuing UC Berkeley AI/ML certification while leading digital transformation 
+                  initiatives for Fortune 500 companies.
+                </p>
+                <div className="flex flex-wrap gap-4">
+                  <div className="flex items-center gap-2 text-white/70">
+                    <MapPin className="w-5 h-5" />
+                    <span>San Francisco Bay Area, CA</span>
+                  </div>
+                  <div className="flex items-center gap-2 text-white/70">
+                    <Phone className="w-5 h-5" />
+                    <span>(860) 706-2742</span>
+                  </div>
+                  <div className="flex items-center gap-2 text-white/70">
+                    <Mail className="w-5 h-5" />
+                    <span>csdmichael@gmail.com</span>
+                  </div>
+                </div>
+                <div className="flex gap-4 pt-4">
+                  <a href="https://www.linkedin.com/in/michael-yaacoub-7a46436" target="_blank" rel="noopener noreferrer"
+                     className="flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg transition-colors">
+                    <Linkedin className="w-5 h-5" />
+                    LinkedIn
+                  </a>
+                  <a href="https://www.github.com/csdmichael" target="_blank" rel="noopener noreferrer"
+                     className="flex items-center gap-2 bg-gray-800 hover:bg-gray-700 text-white px-6 py-3 rounded-lg transition-colors">
+                    <Github className="w-5 h-5" />
+                    GitHub
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div className="lg:w-1/3">
+              <div className="relative">
+                <div className="w-80 h-80 rounded-full bg-gradient-to-br from-cyan-400 to-blue-600 p-1">
+                  <div className="w-full h-full rounded-full bg-slate-900 flex items-center justify-center">
+                    <div className="w-72 h-72 rounded-full bg-gradient-to-br from-slate-800 to-slate-700 flex items-center justify-center">
+                      <span className="text-6xl font-bold text-white">MY</span>
+                    </div>
+                  </div>
+                </div>
+                <div className="absolute -top-4 -right-4 w-24 h-24 bg-cyan-400 rounded-full flex items-center justify-center animate-pulse">
+                  <Code className="w-12 h-12 text-slate-900" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Stats Section */}
+      <section className="py-16 px-6 bg-black/20">
+        <div className="max-w-7xl mx-auto">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="text-center">
+              <div className="text-4xl font-bold text-cyan-400">21+</div>
+              <div className="text-white/70">Years Experience</div>
+            </div>
+            <div className="text-center">
+              <div className="text-4xl font-bold text-cyan-400">2.5M+</div>
+              <div className="text-white/70">Lines of Code</div>
+            </div>
+            <div className="text-center">
+              <div className="text-4xl font-bold text-cyan-400">11</div>
+              <div className="text-white/70">Cloud Projects</div>
+            </div>
+            <div className="text-center">
+              <div className="text-4xl font-bold text-cyan-400">Top 1%</div>
+              <div className="text-white/70">Developer Ranking</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Experience Section */}
+      <section className="py-20 px-6">
+        <div className="max-w-7xl mx-auto">
+          <h2 className="text-4xl font-bold text-white mb-12 text-center">Professional Experience</h2>
+          <div className="space-y-8">
+            {experience.map((exp, index) => (
+              <div key={index} className="bg-white/5 backdrop-blur-sm rounded-xl p-8 border border-white/10 hover:bg-white/10 transition-all">
+                <div className="flex flex-col lg:flex-row justify-between items-start mb-6">
+                  <div>
+                    <h3 className="text-2xl font-bold text-white mb-2">{exp.role}</h3>
+                    <div className="text-cyan-400 text-lg">{exp.company} - Client: {exp.client}</div>
+                  </div>
+                  <div className="text-white/70 bg-slate-800 px-4 py-2 rounded-lg">
+                    {exp.duration}
+                  </div>
+                </div>
+                <ul className="space-y-3">
+                  {exp.achievements.map((achievement, i) => (
+                    <li key={i} className="flex items-start gap-3 text-white/80">
+                      <ChevronRight className="w-5 h-5 text-cyan-400 mt-0.5 flex-shrink-0" />
+                      <span>{achievement}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Skills Section */}
+      <section className="py-20 px-6 bg-black/20">
+        <div className="max-w-7xl mx-auto">
+          <h2 className="text-4xl font-bold text-white mb-12 text-center">Technical Expertise</h2>
+          <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-8">
+            <div className="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10">
+              <div className="flex items-center gap-3 mb-4">
+                <Cloud className="w-8 h-8 text-cyan-400" />
+                <h3 className="text-xl font-bold text-white">Cloud Platforms</h3>
+              </div>
+              <div className="flex flex-wrap gap-2">
+                {skills.cloud.map((skill) => (
+                  <span key={skill} className="bg-cyan-400/20 text-cyan-300 px-3 py-1 rounded-full text-sm">
+                    {skill}
+                  </span>
+                ))}
+              </div>
+            </div>
+            
+            <div className="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10">
+              <div className="flex items-center gap-3 mb-4">
+                <Code className="w-8 h-8 text-green-400" />
+                <h3 className="text-xl font-bold text-white">Programming</h3>
+              </div>
+              <div className="flex flex-wrap gap-2">
+                {skills.programming.map((skill) => (
+                  <span key={skill} className="bg-green-400/20 text-green-300 px-3 py-1 rounded-full text-sm">
+                    {skill}
+                  </span>
+                ))}
+              </div>
+            </div>
+
+            <div className="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10">
+              <div className="flex items-center gap-3 mb-4">
+                <Database className="w-8 h-8 text-purple-400" />
+                <h3 className="text-xl font-bold text-white">AI & Machine Learning</h3>
+              </div>
+              <div className="flex flex-wrap gap-2">
+                {skills.ai.map((skill) => (
+                  <span key={skill} className="bg-purple-400/20 text-purple-300 px-3 py-1 rounded-full text-sm">
+                    {skill}
+                  </span>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Projects Section */}
+      <section className="py-20 px-6">
+        <div className="max-w-7xl mx-auto">
+          <h2 className="text-4xl font-bold text-white mb-12 text-center">Featured Projects</h2>
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            {projects.map((project, index) => (
+              <div key={index} className="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10 hover:bg-white/10 transition-all group">
+                <h3 className="text-xl font-bold text-white mb-3 group-hover:text-cyan-400 transition-colors">
+                  {project.name}
+                </h3>
+                <p className="text-white/70 mb-4 leading-relaxed">
+                  {project.description}
+                </p>
+                <div className="flex flex-wrap gap-2">
+                  {project.tech.map((tech) => (
+                    <span key={tech} className="bg-slate-700 text-white/80 px-2 py-1 rounded text-sm">
+                      {tech}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Education & Certifications */}
+      <section className="py-20 px-6 bg-black/20">
+        <div className="max-w-7xl mx-auto">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+            <div>
+              <h2 className="text-3xl font-bold text-white mb-8 flex items-center gap-3">
+                <GraduationCap className="w-8 h-8 text-cyan-400" />
+                Education
+              </h2>
+              <div className="space-y-6">
+                <div className="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10">
+                  <h3 className="text-xl font-bold text-white mb-2">Masters in Computer Science</h3>
+                  <p className="text-cyan-400">Outstanding Paper Award - International Conference, Belgium</p>
+                  <p className="text-white/70">2004 - 2008</p>
+                </div>
+                <div className="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10">
+                  <h3 className="text-xl font-bold text-white mb-2">UC Berkeley AI/ML Certificate</h3>
+                  <p className="text-cyan-400">Professional Certificate Program (In Progress)</p>
+                  <p className="text-white/70">2025 - 2026</p>
+                </div>
+              </div>
+            </div>
+            
+            <div>
+              <h2 className="text-3xl font-bold text-white mb-8 flex items-center gap-3">
+                <Award className="w-8 h-8 text-cyan-400" />
+                Certifications
+              </h2>
+              <div className="space-y-3">
+                {certifications.map((cert, index) => (
+                  <div key={index} className="flex items-center gap-3 bg-white/5 backdrop-blur-sm rounded-lg p-4 border border-white/10">
+                    <div className="w-2 h-2 bg-cyan-400 rounded-full"></div>
+                    <span className="text-white/80">{cert}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Contact Section */}
+      <section className="py-20 px-6">
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="text-4xl font-bold text-white mb-8">Let's Build Something Amazing</h2>
+          <p className="text-xl text-white/80 mb-12 max-w-2xl mx-auto">
+            Ready to discuss your next project or explore opportunities? 
+            I'm always excited to work on challenging problems in AI, cloud architecture, and digital transformation.
+          </p>
+          
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+            <a href="mailto:csdmichael@gmail.com" 
+               className="flex items-center justify-center gap-3 bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10 hover:bg-white/10 transition-all group">
+              <Mail className="w-6 h-6 text-cyan-400 group-hover:scale-110 transition-transform" />
+              <span className="text-white">Email Me</span>
+            </a>
+            
+            <a href="tel:+18607062742" 
+               className="flex items-center justify-center gap-3 bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10 hover:bg-white/10 transition-all group">
+              <Phone className="w-6 h-6 text-cyan-400 group-hover:scale-110 transition-transform" />
+              <span className="text-white">Call Me</span>
+            </a>
+            
+            <a href="https://www.linkedin.com/in/michael-yaacoub-7a46436" target="_blank" rel="noopener noreferrer"
+               className="flex items-center justify-center gap-3 bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10 hover:bg-white/10 transition-all group">
+              <Linkedin className="w-6 h-6 text-cyan-400 group-hover:scale-110 transition-transform" />
+              <span className="text-white">Connect</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="py-8 px-6 bg-black/40 border-t border-white/10">
+        <div className="max-w-7xl mx-auto text-center">
+          <p className="text-white/60">
+            © 2025 Michael Yaacoub. Built with React & TypeScript.
+          </p>
+        </div>
+      </footer>
+    </div>
+  );
+};
+
+export default MichaelYaacobPortfolio;
