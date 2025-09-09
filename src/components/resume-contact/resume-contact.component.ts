@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { Contact } from 'src/models/resume.model';
 
 @Component({
   selector: 'app-resume-contact',
@@ -7,11 +8,5 @@ import { Component, Input } from '@angular/core';
   standalone: false
 })
 export class ResumeContactComponent {
-  @Input() contact!: {
-    email: string;
-    phone: string;
-    location: string;
-    linkedin: string;
-    github: string;
-  };
+  @Input() contact!: Contact
 }

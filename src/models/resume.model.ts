@@ -2,6 +2,7 @@ export interface Contact {
   email: string;
   phone?: string;
   location?: string;
+  workAuthorization?: string;
   linkedin?: string;
   github?: string;
 }

@@ -8,6 +8,7 @@ export const RESUME_DATA: Resume = {
     email: 'csdmichael@gmail.com',
     phone: '860-706-2742',
     location: 'San Francisco Bay, CA (Danville, CA)',
+    workAuthorization: 'US Citizen',
     linkedin: 'https://www.linkedin.com/in/michael-yaacoub-7a46436',
     github: 'https://www.github.com/csdmichael'
   },
