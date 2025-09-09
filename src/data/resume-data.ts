@@ -63,6 +63,7 @@ export const RESUME_DATA: Resume = {
     {
       title: 'Principal Full Stack & AI Software Engineer (Mobility & Cloud)',
       company: 'Wipro Technologies / TechMahindra – Client: Chevron',
+      companyLogo: 'assets/icon/companies/Chevron.png',
       startDate: 'Oct 2019',
       endDate: 'Present',
       summary: 'Led enterprise mobility and AI initiatives at Chevron, building mobile, web, and AI/ML applications.',
@@ -83,6 +84,7 @@ export const RESUME_DATA: Resume = {
     {
       title: 'Senior Technical Architect (Cloud, Mobility, Data, BI, SharePoint)',
       company: 'Virtusa – Client: Pratt & Whitney',
+      companyLogo: 'assets/icon/companies/PrattAndWhitney.png',
       startDate: 'Jun 2016',
       endDate: 'Oct 2019',
       summary: 'Architected and developed mobile apps and led SharePoint cloud migration projects.',
@@ -97,6 +99,7 @@ export const RESUME_DATA: Resume = {
     {
       title: 'Senior Technical Architect / Developer',
       company: 'KaizenTek – Client: Day Pitney LLP',
+      companyLogo: 'assets/icon/companies/DayPitney.png',
       startDate: 'May 2015',
       endDate: 'Jun 2016',
       summary: 'Led Sitecore public website and SharePoint portal development.',
@@ -111,6 +114,7 @@ export const RESUME_DATA: Resume = {
     {
       title: 'Senior Technical Architect / Developer',
       company: 'KaizenTek – Client: State of Connecticut (CJIS)',
+      companyLogo: 'assets/icon/companies/CJIS.png',
       startDate: 'Jan 2014',
       endDate: 'Apr 2015',
       summary: 'Built and maintained Connecticut Information Sharing System.',
@@ -125,6 +129,7 @@ export const RESUME_DATA: Resume = {
     {
       title: 'Senior Technical Architect / Developer',
       company: 'KaizenTek – Client: Merck Pharmaceutical',
+      companyLogo: 'assets/icon/companies/Merck.png',
       startDate: 'Sep 2012',
       endDate: 'Dec 2014',
       summary: 'Delivered BI dashboards, migrated portals to Azure, built ETL pipelines.',
@@ -139,6 +144,7 @@ export const RESUME_DATA: Resume = {
     {
       title: 'Senior Developer',
       company: 'ITWorx – Client: Somers School District (NY)',
+      companyLogo: 'assets/icon/companies/SomersSchoolDistrict.png',
       startDate: 'Jun 2011',
       endDate: 'Aug 2012',
       summary: 'Built education dashboards and migrated Connected Learning Gateway to Azure.',
@@ -152,6 +158,7 @@ export const RESUME_DATA: Resume = {
     {
       title: 'Senior Developer',
       company: 'ITWorx – Client: United Technologies (UTC)',
+      companyLogo: 'assets/icon/companies/UTC.png',
       startDate: 'Sep 2006',
       endDate: 'May 2011',
       summary: 'Developed BI dashboards, Sarbanes-Oxley tools, and supported SharePoint/SQL environments.',
@@ -166,6 +173,7 @@ export const RESUME_DATA: Resume = {
     {
       title: 'Software Engineer',
       company: 'ITWorx – Clients: POET EMS & RMS Insurance',
+      companyLogo: 'assets/icon/companies/ITWorx.png',
       startDate: 'Aug 2004',
       endDate: 'Aug 2006',
       summary: 'Developed CMS and insurance workflow systems.',

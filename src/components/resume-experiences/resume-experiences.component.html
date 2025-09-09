@@ -1,11 +1,21 @@
 <ion-accordion-group>
   <ion-accordion *ngFor="let exp of experiences">
-    <ion-item slot="header">
-      <ion-label>
-        <strong>{{ exp.title }}</strong> - {{ exp.company }}
-        <p>{{ exp.startDate }} - {{ exp.endDate }}</p>
-      </ion-label>
-    </ion-item>
+    <ion-grid>
+      <ion-row>
+        <ion-col size="2" class="ion-text-center">
+          <img [src]="'../../' + exp.companyLogo" alt="{{ exp.company }}" style="max-width: 100px; max-height: 50px; object-fit: contain;" />
+        </ion-col>
+        <ion-col size="10">
+          <ion-item slot="header">
+            <ion-label>
+              <strong>{{ exp.title }}</strong> - {{ exp.company }}
+              <p>{{ exp.startDate }} - {{ exp.endDate }}</p>
+            </ion-label>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    
     <div class="ion-padding" slot="content">
       <p>{{ exp.summary }}</p>
       <ul>

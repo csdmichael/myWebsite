@@ -9,6 +9,7 @@ export interface Contact {
 export interface ExperienceItem {
   title: string;
   company: string;
+  companyLogo: string;
   startDate?: string;
   endDate?: string;
   summary?: string;
