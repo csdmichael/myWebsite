@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Router, NavigationExtras, ActivatedRoute } from '@angular/router';
-
+import { Router } from '@angular/router';
+import { ResumeService } from 'src/services/resume.service';
 
 @Component({
     selector: 'app-home',
@@ -11,14 +11,15 @@ import { Router, NavigationExtras, ActivatedRoute } from '@angular/router';
 
 export class HomePage  implements OnInit {
   public section!: string;
-
-  constructor(public router: Router) {
+  public resume: any;
+  constructor(public router: Router, private resumeSvc: ResumeService) {
     
   }
 
   ngOnInit() {
     console.log('In Home Page');
-    
+    this.resume = this.resumeSvc.getResume();
+    console.log('Resume Data:', this.resume);
     this.section = 'about';
    
   }

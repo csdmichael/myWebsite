@@ -1,0 +1,17 @@
+<ion-accordion-group>
+  <ion-accordion *ngFor="let exp of experiences">
+    <ion-item slot="header">
+      <ion-label>
+        <strong>{{ exp.title }}</strong> - {{ exp.company }}
+        <p>{{ exp.startDate }} - {{ exp.endDate }}</p>
+      </ion-label>
+    </ion-item>
+    <div class="ion-padding" slot="content">
+      <p>{{ exp.summary }}</p>
+      <ul>
+        <li *ngFor="let bullet of exp.bullets">{{ bullet }}</li>
+      </ul>
+      <ion-chip *ngFor="let tech of exp.technologies" color="secondary">{{ tech }}</ion-chip>
+    </div>
+  </ion-accordion>
+</ion-accordion-group>

@@ -1,10 +1,17 @@
 <ion-header>
-
-  <app-header [ShowMenu]="false" [HideHome]="true" [IsSetup]="false"
-  [PageTitle]="'Welcome to Chevron Pay HelpDesk Assistant'"></app-header>
+  <ion-toolbar>
+    <ion-title>{{ resume.name }}</ion-title>
+  </ion-toolbar>
 </ion-header>
 
 <ion-content>
+  <app-resume-header *ngIf="resume" [name]="resume.name" [headline]="resume.headline"></app-resume-header>
+  <app-resume-contact *ngIf="resume" [contact]="resume.contact"></app-resume-contact>
+  <app-resume-summary *ngIf="resume" [summary]="resume.summary"></app-resume-summary>
+  <app-resume-skills *ngIf="resume" [skills]="resume.skills"></app-resume-skills>
+  <app-resume-certifications *ngIf="resume" [certifications]="resume.certifications"></app-resume-certifications>
+  <app-resume-experiences *ngIf="resume" [experiences]="resume.experiences"></app-resume-experiences>
+  <!--
   <ion-card>
     <ion-segment mode="ios" class="tabsClass" [(ngModel)]="section">
       <ion-segment-button value="about">
@@ -37,7 +44,7 @@
     @if (section == 'Exp') { }
     @if (section == 'Awards') { } 
   </ion-card>
-
+  -->
 </ion-content>
 <ion-footer>
   <app-footer></app-footer>
