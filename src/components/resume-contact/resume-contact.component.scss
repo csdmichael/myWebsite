@@ -1,0 +1,23 @@
+.contact-item {
+  display: flex;
+  align-items: center;
+  padding: 8px 0;
+  font-size: 0.95rem;
+  color: #333;
+
+  ion-icon {
+    font-size: 1.2rem;
+    margin-right: 8px;
+    color: var(--ion-color-primary);
+  }
+
+  a {
+    color: var(--ion-color-primary);
+    text-decoration: none;
+    font-weight: 500;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+}

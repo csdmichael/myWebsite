@@ -1,0 +1,22 @@
+.resume-background {
+  --background: transparent;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+              url('/assets/icon/background.png') no-repeat center center fixed;
+  background-size: cover;
+  color: #fff;
+}
+
+ion-card,
+ion-list,
+ion-accordion {
+  background: rgba(255, 255, 255, 0.9);
+  color: #222;
+  border-radius: 12px;
+  margin-bottom: 16px;
+}
+
+.footer-text {
+  text-align: center;
+  font-size: 0.8rem;
+  color: #ccc;
+}

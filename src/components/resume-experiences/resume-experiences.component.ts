@@ -3,6 +3,7 @@ import { Component, Input } from '@angular/core';
 @Component({
   selector: 'app-resume-experiences',
   templateUrl: './resume-experiences.component.html',
+  styleUrls: ['./resume-experiences.component.scss'],
   standalone: false
 })
 export class ResumeExperiencesComponent {

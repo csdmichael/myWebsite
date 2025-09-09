@@ -10,8 +10,10 @@ import { ResumeService } from 'src/services/resume.service';
 })
 
 export class HomePage  implements OnInit {
-  public section!: string;
+  selectedSection: string = 'summary'; // default section
   public resume: any;
+  currentYear: number = new Date().getFullYear();
+  
   constructor(public router: Router, private resumeSvc: ResumeService) {
     
   }
@@ -20,7 +22,6 @@ export class HomePage  implements OnInit {
     console.log('In Home Page');
     this.resume = this.resumeSvc.getResume();
     console.log('Resume Data:', this.resume);
-    this.section = 'about';
    
   }
 
