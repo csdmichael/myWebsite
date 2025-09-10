@@ -88,7 +88,7 @@ export const RESUME_DATA: Resume = {
   education: [
     {
       degree: 'Professional Certificate in Artifical Intelligence (AI) and Machine Learning (ML)',
-      institution: 'Alexandria University, Faculty of Engineering, Computer Science Department, Egypt',
+      institution: 'Berkeley University of California (UC Berkeley) - School of Information',
       graduationMonthYear: 'Mar 2016',
       referenceUrl: 'https://em-executive.berkeley.edu/professional-certificate-machine-learning-artificial-intelligence',
       logoUrl: '../../assets/icon/education/berkeleyUniv.png'
