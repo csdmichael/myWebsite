@@ -32,7 +32,7 @@ export interface Resume {
   name: string;
   headline: string;
   contact: Contact;
-  summary: string;
+  summary: string[];
   skills: any;
   certifications: string[];
   experiences: ExperienceItem[];

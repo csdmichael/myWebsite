@@ -12,12 +12,13 @@ export const RESUME_DATA: Resume = {
     linkedin: 'https://www.linkedin.com/in/michael-yaacoub-7a46436',
     github: 'https://www.github.com/csdmichael'
   },
-  summary: `21+ years of professional experience in architecture, analysis, design, and development of applications 
-  across Cloud, Mobility, Web, Databases, and AI/ML. Expertise leading onshore and offshore teams, delivering 
-  enterprise solutions for Fortune 500 clients. Proven track record in AI (chatbots, fraud detection, customer segmentation, 
-  agentic AI), full-stack (Angular, React, ASP.NET Core, Ionic), and cloud (Azure, AWS, GCP). Strong focus on 
-  performance, scalability, security, and user experience. Skilled in CI/CD, DevOps automation, and modernizing 
-  legacy platforms to cloud-native, AI-powered systems.`,
+  summary: [
+    '21+ years of professional experience in architecture, analysis, design, and development of applications across Cloud, Mobility, Web, Databases, and AI/ML.',
+  'Expertise leading onshore and offshore teams, delivering enterprise solutions for Fortune 500 clients.',
+  'Proven track record in AI (chatbots, fraud detection, customer segmentation, agentic AI), full-stack (Angular, React, ASP.NET Core, Ionic), and cloud (Azure, AWS, GCP).', 
+  'Strong focus on performance, scalability, security, and user experience.',
+  'Skilled in CI/CD, DevOps automation, and modernizing legacy platforms to cloud-native, AI-powered systems.'
+  ],  
   
   skills: {
     'Cloud': [
