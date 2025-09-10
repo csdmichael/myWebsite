@@ -85,24 +85,122 @@ export const RESUME_DATA: Resume = {
     'UX Design',
     'Microservices Architecture'
   ]},
-
-  certifications: [
-    'UC Berkeley – Professional Certificate in AI & Machine Learning (In Progress)',
-    'AWS Certified AI Practitioner',
-    'MSc in Computer Science and Engineering',
-    'Bachelor’s in Computer Science and Engineering',
-    'MCSE – Azure Cloud',
-    'MCSD for .NET',
-    'MCITP – BI Developer & Maintenance',
-    'MCAD for .NET',
-    'MCTS – SharePoint Administration',
-    'MCTS – SQL Server 2005',
-    'MCDBA – SQL 2005',
-    'MCP – Web Development',
-    'AngularJS Certified',
-    'Fundamentals of Azure OpenAI Service',
-    'PMP – Project Management Professional',
-    'Sitecore Developer Certified'
+  education: [
+    {
+      degree: 'Professional Certificate in Artifical Intelligence (AI) and Machine Learning (ML)',
+      institution: 'Alexandria University, Faculty of Engineering, Computer Science Department, Egypt',
+      graduationMonthYear: 'Mar 2016',
+      referenceUrl: 'https://em-executive.berkeley.edu/professional-certificate-machine-learning-artificial-intelligence',
+      logoUrl: '../../assets/icon/education/berkeleyUniv.png'
+    },
+    {
+      degree: 'Master of Science in Computer Science and Engineering',
+      institution: 'Alexandria University, Faculty of Engineering, Computer Science Department, Egypt',
+      graduationMonthYear: 'Feb 2008',
+      referenceUrl: '',
+      logoUrl: '../../assets/icon/education/alexUniv.png'
+    },
+    {
+      degree: 'Bachelor of Science in Computer Science and Engineering',
+      institution: 'Alexandria University, Faculty of Engineering, Computer Science Department, Egypt',
+      graduationMonthYear: 'June 2004',
+      referenceUrl: '',
+      logoUrl: '../../assets/icon/education/alexUniv.png'
+    }
+  ],
+  certifications: 
+    [
+      {
+        "degree": "AWS Certified AI Practitioner",
+        "institution": "Amazon Web Services",
+        "graduationMonthYear": "Aug 2024",
+        "referenceUrl": "https://www.credly.com/badges/15381a33-6b27-49f6-8f4f-2beae0076582/linked_in_profile",
+        "logoUrl": "../../assets/icon/certifications/AWS.png"
+      },
+      {
+        "degree": "Fundamentals of Azure OpenAI Service",
+        "institution": "Microsoft",
+        "graduationMonthYear": "May 2024",
+        "referenceUrl": "",
+        "logoUrl": "../../assets/icon/certifications/Microsoft.png"
+      },
+      {
+        "degree": "MCSE – Azure Cloud",
+        "institution": "Microsoft",
+        "graduationMonthYear": "Apr 2024",
+        "referenceUrl": "",
+        "logoUrl": "../../assets/icon/certifications/Microsoft.png"
+      },
+      {
+        "degree": "PMP – Project Management Professional",
+        "institution": "Project Management Institute",
+        "graduationMonthYear": "Jul 2021",
+        "referenceUrl": "",
+        "logoUrl": "../../assets/icon/certifications/PMI.png"
+      },
+      {
+        "degree": "MCSD for .NET",
+        "institution": "Microsoft",
+        "graduationMonthYear": "Jan 2020",
+        "referenceUrl": "",
+        "logoUrl": "../../assets/icon/certifications/Microsoft.png"
+      },
+      {
+        "degree": "Sitecore Developer Certified",
+        "institution": "Sitecore",
+        "graduationMonthYear": "Nov 2019",
+        "referenceUrl": "",
+        "logoUrl": "../../assets/icon/certifications/Sitecore.png"
+      },
+      {
+        "degree": "AngularJS Certified",
+        "institution": "Google",
+        "graduationMonthYear": "Oct 2019",
+        "referenceUrl": "",
+        "logoUrl": "../../assets/icon/certifications/Google.png"
+      },
+      {
+        "degree": "MCITP – BI Developer & Maintenance",
+        "institution": "Microsoft",
+        "graduationMonthYear": "Dec 2018",
+        "referenceUrl": "",
+        "logoUrl": "../../assets/icon/certifications/Microsoft.png"
+      },
+      {
+        "degree": "MCAD for .NET",
+        "institution": "Microsoft",
+        "graduationMonthYear": "Dec 2017",
+        "referenceUrl": "",
+        "logoUrl": "../../assets/icon/certifications/Microsoft.png"
+      },
+      {
+        "degree": "MCTS – SharePoint Administration",
+        "institution": "Microsoft",
+        "graduationMonthYear": "Jun 2017",
+        "referenceUrl": "",
+        "logoUrl": "../../assets/icon/certifications/Microsoft.png"
+      },
+      {
+        "degree": "MCDBA – SQL 2005",
+        "institution": "Microsoft",
+        "graduationMonthYear": "Jun 2016",
+        "referenceUrl": "",
+        "logoUrl": "../../assets/icon/certifications/Microsoft.png"
+      },
+      {
+        "degree": "MCTS – SQL Server 2005",
+        "institution": "Microsoft",
+        "graduationMonthYear": "Jun 2016",
+        "referenceUrl": "",
+        "logoUrl": "../../assets/icon/certifications/Microsoft.png"
+      },
+      {
+        "degree": "MCP – Web Development",
+        "institution": "Microsoft",
+        "graduationMonthYear": "Mar 2015",
+        "referenceUrl": "",
+        "logoUrl": "../../assets/icon/certifications/Microsoft.png"
+      }
   ],
 
   experiences: [

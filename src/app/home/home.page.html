@@ -5,13 +5,15 @@
             [name]="resume.name"
             [headline]="resume.headline">
           </app-resume-header>
-    <app-resume-contact [contact]="resume.contact"></app-resume-contact>
+    
   </ion-toolbar>
 </ion-header>
 
 <ion-content class="resume-background ion-padding">
   
-  
+  <ion-card>
+    <app-resume-contact [contact]="resume.contact"></app-resume-contact>
+  </ion-card>
 
   <!-- Tabs/Segments for navigation -->
   <ion-card>
@@ -25,9 +27,13 @@
           <ion-icon name="construct-outline"></ion-icon>
           <ion-label>Skills</ion-label>
         </ion-segment-button>
+        <ion-segment-button value="education">
+          <ion-icon name="library-outline"></ion-icon>
+          <ion-label>Education</ion-label>
+        </ion-segment-button>
         <ion-segment-button value="certifications">
           <ion-icon name="ribbon-outline"></ion-icon>
-          <ion-label>Certs</ion-label>
+          <ion-label>Certifications</ion-label>
         </ion-segment-button>
         <ion-segment-button value="experiences">
           <ion-icon name="briefcase-outline"></ion-icon>
@@ -52,7 +58,10 @@
     <ng-container *ngIf="selectedSection === 'skills'">
       <app-resume-skills [skills]="resume.skills"></app-resume-skills>
     </ng-container>
-
+    <ng-container *ngIf="selectedSection === 'education'">
+      <app-resume-education [education]="resume.education">
+      </app-resume-education>
+    </ng-container>
     <ng-container *ngIf="selectedSection === 'certifications'">
       <app-resume-certifications [certifications]="resume.certifications">
       </app-resume-certifications>

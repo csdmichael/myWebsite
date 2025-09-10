@@ -17,6 +17,7 @@ import { ResumeSummaryModule } from 'src/components/resume-summary/resume-summar
 import { PDFViewerModule } from 'src/components/pdf-viewer/pdf-viewer.module';
 import { AiMlProjectsModule } from 'src/components/ai-ml-projects/ai-ml-projects.module';
 import { PdfViewerModule } from 'ng2-pdf-viewer';
+import { ResumeEducationModule } from 'src/components/resume-education/resume-education.module';
 
 @NgModule({
   imports: [
@@ -26,7 +27,8 @@ import { PdfViewerModule } from 'ng2-pdf-viewer';
     AppHeaderModule,
     AppFooterModule,
     PdfViewerModule,
-    ResumeCertificationsModule, ResumeContactModule, ResumeExperiencesModule, AiMlProjectsModule, ResumeHeaderModule, ResumeSkillsModule, ResumeSummaryModule, PDFViewerModule,
+    ResumeCertificationsModule, ResumeContactModule,
+    ResumeEducationModule, ResumeExperiencesModule, AiMlProjectsModule, ResumeHeaderModule, ResumeSkillsModule, ResumeSummaryModule, PDFViewerModule,
     RouterModule.forChild([{ path: '', component: HomePage }])
   ],
   schemas:[CUSTOM_ELEMENTS_SCHEMA],

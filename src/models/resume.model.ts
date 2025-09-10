@@ -28,13 +28,30 @@ export interface AIMLProject {
   reference: string;
 }
 
+export interface EducationItem {
+  degree: string;
+  institution: string;
+  graduationMonthYear: string;
+  referenceUrl: string;
+  logoUrl: string;
+}
+
+export interface CertificateItem {
+  degree: string;
+  institution: string;
+  graduationMonthYear: string;
+  referenceUrl?: string;
+  logoUrl?: string;
+}
+
 export interface Resume {
   name: string;
   headline: string;
   contact: Contact;
   summary: string[];
   skills: any;
-  certifications: string[];
+  education: EducationItem[];
+  certifications: CertificateItem[];
   experiences: ExperienceItem[];
   aiMlProjects: AIMLProject[];
 }

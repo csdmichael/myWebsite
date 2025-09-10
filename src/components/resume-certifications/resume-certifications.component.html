@@ -1,3 +1,20 @@
 <ion-list>
-  <ion-item *ngFor="let cert of certifications">{{ cert }}</ion-item>
+  <ion-item *ngFor="let cert of certifications">
+    <ion-grid>
+        <ion-row>
+          <ion-col size="2" class="ion-text-center">
+            <img [src]="cert.logoUrl" alt="{{ cert.institution }}" style="max-width: 100px; max-height: 50px; object-fit: contain;" />
+          </ion-col>
+          <ion-col size="10">
+            <ion-label>
+              <strong>{{ cert.degree }}</strong><br/>
+              {{ cert.institution }}<br />
+              <p>Acquired on: <b>{{ cert.graduationMonthYear }}</b></p>
+              <a *ngIf="cert.referenceUrl" [href]="cert.referenceUrl" target="_blank" rel="noopener noreferrer">
+                View Certificate  </a><br />
+            </ion-label>
+          </ion-col>
+        </ion-row>  
+      </ion-grid>
+  </ion-item>
 </ion-list>
