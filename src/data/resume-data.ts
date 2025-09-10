@@ -4,13 +4,13 @@ import { Resume } from '../models/resume.model';
 export const RESUME_DATA: Resume = {
   name: 'Michael Yaacoub',
   headline: 'Principal Full-Stack & AI Software Engineer / Architect',
+  location: 'San Francisco Bay, CA',
+  workAuthorization: 'US Citizen',
+  linkedin: 'https://www.linkedin.com/in/michael-yaacoub-7a46436',
+  github: 'https://www.github.com/csdmichael',
   contact: {
     email: 'csdmichael@gmail.com',
-    phone: '860-706-2742',
-    location: 'San Francisco Bay, CA (Danville, CA)',
-    workAuthorization: 'US Citizen',
-    linkedin: 'https://www.linkedin.com/in/michael-yaacoub-7a46436',
-    github: 'https://www.github.com/csdmichael'
+    phone: '860-706-2742'
   },
   summary: [
     '21+ years of professional experience in architecture, analysis, design, and development of applications across Cloud, Mobility, Web, Databases, and AI/ML.',

@@ -9,8 +9,9 @@
           </ion-col>
           <ion-col size="10">
             <ion-label>
-              <strong>{{ exp.title }}</strong> - {{ exp.company }}
-              <p>{{ exp.startDate }} - {{ exp.endDate }}</p>
+              <strong>{{ exp.title }}</strong> <br/>
+              {{ exp.company }}<br/>
+              {{ exp.startDate }} - {{ exp.endDate }}
             </ion-label>
           </ion-col>
         </ion-row>  
@@ -18,7 +19,7 @@
     </ion-item>
     
     <div class="ion-padding" slot="content">
-      <p>{{ exp.summary }}</p>
+      <strong><p>{{ exp.summary }}</p></strong>
       <ul>
         <li *ngFor="let bullet of exp.bullets">{{ bullet }}</li>
       </ul>

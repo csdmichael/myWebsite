@@ -1,10 +1,6 @@
 export interface Contact {
   email: string;
   phone?: string;
-  location?: string;
-  workAuthorization?: string;
-  linkedin?: string;
-  github?: string;
 }
 
 export interface ExperienceItem {
@@ -47,6 +43,10 @@ export interface CertificateItem {
 export interface Resume {
   name: string;
   headline: string;
+  location?: string;
+  workAuthorization?: string;
+  linkedin?: string;
+  github?: string;
   contact: Contact;
   summary: string[];
   skills: any;

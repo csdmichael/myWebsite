@@ -3,18 +3,14 @@
     <app-resume-header
             *ngIf="resume"
             [name]="resume.name"
-            [headline]="resume.headline">
+            [headline]="resume.headline"
+            [location]="resume.location"
+            [workAuthorization]="resume.workAuthorization"
+            [linkedin]="resume.linkedin"
+            [github]="resume.github">
           </app-resume-header>
     
   </ion-toolbar>
-</ion-header>
-
-<ion-content class="resume-background ion-padding">
-  
-  <ion-card>
-    <app-resume-contact [contact]="resume.contact"></app-resume-contact>
-  </ion-card>
-
   <!-- Tabs/Segments for navigation -->
   <ion-card>
     <ion-toolbar>
@@ -49,8 +45,18 @@
           <ion-icon name="analytics-outline"></ion-icon>
           <ion-label>AI / ML Projects</ion-label>
         </ion-segment-button>
+        <ion-segment-button value="contact">
+          <ion-icon name="call-outline"></ion-icon>
+          <ion-label>Contact Me</ion-label>
+        </ion-segment-button>
       </ion-segment>
     </ion-toolbar>
+  </ion-card>
+</ion-header>
+
+<ion-content class="resume-background ion-padding">
+  <!-- Conditionally render sections based on selected tab -->
+  <ion-card *ngIf="resume">
     <ng-container *ngIf="selectedSection === 'summary'">
       <app-resume-summary [summary]="resume.summary"></app-resume-summary>
     </ng-container>
@@ -79,13 +85,16 @@
       <app-ai-ml-projects [aiMlProjects]="resume.aiMlProjects">
       </app-ai-ml-projects>
     </ng-container>
+    <ng-container *ngIf="selectedSection === 'contact'">
+      <app-resume-contact [contact]="resume.contact"></app-resume-contact>
+    </ng-container>
   </ion-card>
   
 </ion-content>
 
 <!-- Footer -->
 <ion-footer>
-  <ion-toolbar color="dark">
+  <ion-toolbar color="white" background-color="dark">
     <ion-title size="small" class="footer-text">
       © {{ currentYear }} Michael Yaacoub
     </ion-title>

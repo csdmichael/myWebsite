@@ -10,4 +10,8 @@ import { Component, Input } from '@angular/core';
 export class ResumeHeaderComponent {
   @Input() name!: string;
   @Input() headline!: string;
+  @Input() location!: string;
+  @Input() workAuthorization!: string;
+  @Input() linkedin!: string;
+  @Input() github!: string;
 }
