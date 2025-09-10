@@ -25,20 +25,23 @@ import { File } from '@ionic-native/file/ngx';
 import { PlatformService } from 'src/services/platform/platform.service';
 import { HTTP } from '@ionic-native/http/ngx';
 import { NgxPaginationModule } from 'ngx-pagination';
-import {  MsalModule } from '@azure/msal-angular';
-import { PublicClientApplication } from '@azure/msal-browser';
+//import {  MsalModule } from '@azure/msal-angular';
+//import { PublicClientApplication } from '@azure/msal-browser';
 import { TranslateModule } from "@ngx-translate/core";
+import { PdfViewerModule } from 'ng2-pdf-viewer';
 
 const isIE = window.navigator.userAgent.indexOf('MSIE ') > -1 || window.navigator.userAgent.indexOf('Trident/') > -1 || window.navigator.userAgent.indexOf('Edge/') > -1;
 
 @NgModule({ declarations: [AppComponent],
     schemas: [CUSTOM_ELEMENTS_SCHEMA],
-    bootstrap: [AppComponent], imports: [BrowserModule,
+    bootstrap: [AppComponent], 
+    imports: [BrowserModule,
         IonicModule.forRoot(),
         AppRoutingModule,
         IonicStorageModule.forRoot(),
         TranslateModule.forRoot(),
         FormsModule,
+        PdfViewerModule,
         NgxPaginationModule
         
     ], providers: [

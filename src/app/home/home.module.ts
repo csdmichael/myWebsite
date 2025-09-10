@@ -16,6 +16,7 @@ import { ResumeSkillsModule } from 'src/components/resume-skills/resume-skills.m
 import { ResumeSummaryModule } from 'src/components/resume-summary/resume-summary.module';
 import { PDFViewerModule } from 'src/components/pdf-viewer/pdf-viewer.module';
 import { AiMlProjectsModule } from 'src/components/ai-ml-projects/ai-ml-projects.module';
+import { PdfViewerModule } from 'ng2-pdf-viewer';
 
 @NgModule({
   imports: [
@@ -24,6 +25,7 @@ import { AiMlProjectsModule } from 'src/components/ai-ml-projects/ai-ml-projects
     IonicModule,
     AppHeaderModule,
     AppFooterModule,
+    PdfViewerModule,
     ResumeCertificationsModule, ResumeContactModule, ResumeExperiencesModule, AiMlProjectsModule, ResumeHeaderModule, ResumeSkillsModule, ResumeSummaryModule, PDFViewerModule,
     RouterModule.forChild([{ path: '', component: HomePage }])
   ],

@@ -1,8 +1,20 @@
-<div class="pdf-container">
+<ion-content>
+  <div class="pdf-controls">
+    <ion-button fill="outline" size="small" (click)="prevPage()" [disabled]="page === 1">
+      <ion-icon name="arrow-back-outline"></ion-icon>
+    </ion-button>
+
+    <span>Page {{ page }} / {{ totalPages }}</span>
+
+    <ion-button fill="outline" size="small" (click)="nextPage()" [disabled]="page === totalPages">
+      <ion-icon name="arrow-forward-outline"></ion-icon>
+    </ion-button>
+  </div>
+
   <pdf-viewer 
-    [src]="'../../assets/docs/MichaelYaacoub_CareerHighlights_Principal_SWE_Architect.pdf'"
-    [render-text]="true"
+    [src]="pdfUrl" 
+    [page]="page"
     [original-size]="false"
-    style="display: block; height: 100vh;">
+    style="display: block;">
   </pdf-viewer>
-</div>
+</ion-content>
