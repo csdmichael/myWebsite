@@ -1,1 +1,18 @@
-<ion-chip *ngFor="let skill of skills" color="primary">{{ skill }}</ion-chip>
+<ion-content>
+  <div class="section-header">
+    <ion-icon name="ribbon-outline" class="header-icon"></ion-icon>
+    <h2>Skills</h2>
+  </div>
+  <ion-accordion-group expand="inset" value="skill">
+    <ion-accordion *ngFor="let category of (skills | keyvalue)" value="skill">
+      <ion-item slot="header">
+        <ion-label>{{ category.key }}</ion-label>
+      </ion-item>
+      <div class="ion-padding" slot="content">
+        <ion-chip *ngFor="let skill of category.value" color="primary" outline="true">
+          <ion-label>{{ skill }}</ion-label>
+        </ion-chip>
+      </div>
+    </ion-accordion>
+  </ion-accordion-group>
+</ion-content>

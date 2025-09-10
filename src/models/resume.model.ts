@@ -18,12 +18,23 @@ export interface ExperienceItem {
   technologies?: string[];
 }
 
+export interface AIMLProject {
+  title: string;
+  company: string;
+  problem: string;
+  solutionImpact: string;
+  whatIBuilt: string[];
+  challengesOvercome: string[];
+  reference: string;
+}
+
 export interface Resume {
   name: string;
   headline: string;
   contact: Contact;
   summary: string;
-  skills: string[];
+  skills: any;
   certifications: string[];
   experiences: ExperienceItem[];
+  aiMlProjects: AIMLProject[];
 }

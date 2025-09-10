@@ -1,0 +1,45 @@
+<ion-content>
+  <div class="section-header">
+    <ion-icon name="sparkles-outline" class="header-icon"></ion-icon>
+    <h2>AI / ML Projects</h2>
+  </div>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col size="12" sizeMd="6" *ngFor="let project of aiMlProjects">
+        <ion-card>
+          <ion-card-header>
+            <ion-icon name="analytics-outline" class="project-icon"></ion-icon>
+            <ion-card-title>{{ project.title }}</ion-card-title>
+            <ion-card-subtitle>{{ project.company }}</ion-card-subtitle>
+          </ion-card-header>
+
+          <ion-card-content>
+            <p><strong>Problem:</strong> {{ project.problem }}</p>
+            <p><strong>Solution & Impact:</strong> {{ project.solutionImpact }}</p>
+
+            <div *ngIf="project.whatIBuilt?.length">
+              <p><strong>What I Built:</strong></p>
+              <ul>
+                <li *ngFor="let item of project.whatIBuilt">{{ item }}</li>
+              </ul>
+            </div>
+
+            <div *ngIf="project.challengesOvercome?.length">
+              <p><strong>Challenges Overcome:</strong></p>
+              <ul>
+                <li *ngFor="let challenge of project.challengesOvercome">{{ challenge }}</li>
+              </ul>
+            </div>
+
+            <div *ngIf="project.reference">
+              <a [href]="project.reference" target="_blank" rel="noopener noreferrer">
+                Reference Article
+              </a>
+            </div>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

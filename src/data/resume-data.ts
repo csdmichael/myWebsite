@@ -19,27 +19,71 @@ export const RESUME_DATA: Resume = {
   performance, scalability, security, and user experience. Skilled in CI/CD, DevOps automation, and modernizing 
   legacy platforms to cloud-native, AI-powered systems.`,
   
-  skills: [
-    // Cloud
-    'Microsoft Azure', 'Amazon AWS', 'Google GCP',
-    // Programming Languages
-    'Python', 'C#', 'Java', 'C++',
-    // Web & Frontend
-    'Angular', 'React', 'TypeScript', 'Node.js', 'HTML5', 'Ionic', 'React Native',
-    // AI & ML
-    'Azure OpenAI Service', 'LangChain', 'LangGraph', 'TensorFlow', 'PyTorch',
-    'Agentic AI (AutoGen, CrewAI)', 'Azure ML Studio', 'AWS SageMaker', 'AWS Bedrock',
-    'Generative AI & Prompt Engineering', 'Azure Cognitive Services',
-    // Databases
-    'SQL Azure', 'SQL Server (SSIS, SSRS, SSAS)', 'Oracle', 'MongoDB',
-    'Databricks', 'Apache Spark', 'HDFS', 'Amazon RDS (pgvector)', 'Pinecone',
-    // Frameworks
-    'ASP.NET Core', 'ASP.NET', 'Flask', 'Django', 'Sitecore', 'SharePoint',
-    // DevOps & Automation
-    'Azure DevOps', 'Ansible', 'CloudFormation', 'CI/CD Pipelines',
-    // Other
-    'Agile (Scrum, Kanban)', 'Waterfall', 'UX Design', 'Microservices Architecture'
+  skills: {
+    'Cloud': [
+    'Microsoft Azure',
+    'Amazon AWS',
+    'Google GCP'
   ],
+  'Programming Languages': [
+    'Python',
+    'C#',
+    'Java',
+    'C++'
+  ],
+  'Web & Frontend': [
+    'Angular',
+    'React',
+    'TypeScript',
+    'Node.js',
+    'HTML5',
+    'Ionic',
+    'React Native'
+  ],
+  'AI & ML': [
+    'Azure OpenAI Service',
+    'LangChain',
+    'LangGraph',
+    'TensorFlow',
+    'PyTorch',
+    'Agentic AI (AutoGen, CrewAI)',
+    'Azure ML Studio',
+    'AWS SageMaker',
+    'AWS Bedrock',
+    'Generative AI & Prompt Engineering',
+    'Azure Cognitive Services'
+  ],
+  'Databases': [
+    'SQL Azure',
+    'SQL Server (SSIS, SSRS, SSAS)',
+    'Oracle',
+    'MongoDB',
+    'Databricks',
+    'Apache Spark',
+    'HDFS',
+    'Amazon RDS (pgvector)',
+    'Pinecone'
+  ],
+  'Frameworks': [
+    'ASP.NET Core',
+    'ASP.NET',
+    'Flask',
+    'Django',
+    'Sitecore',
+    'SharePoint'
+  ],
+  'DevOps & Automation': [
+    'Azure DevOps',
+    'Ansible',
+    'CloudFormation',
+    'CI/CD Pipelines'
+  ],
+  'Other': [
+    'Agile (Scrum, Kanban)',
+    'Waterfall',
+    'UX Design',
+    'Microservices Architecture'
+  ]},
 
   certifications: [
     'UC Berkeley – Professional Certificate in AI & Machine Learning (In Progress)',
@@ -185,5 +229,118 @@ export const RESUME_DATA: Resume = {
       ],
       technologies: ['Java', 'JSP', 'Oracle', 'ASP.NET', 'SQL Server']
     }
-  ]
+  ], 
+  aiMlProjects: [
+  {
+    "title": "Generative AI Chatbot for Support",
+    "company": "Chevron – Knowledge Automation",
+    "problem": "Customers of Chevron / Texaco Gas Stations & ExtraMile Stores needed fast responses when using Mobile Payment at the Pump and C-Stores, as well as when asking about Loyalty / Rewards Programs. Manual support caused long delays and high costs.",
+    "solutionImpact": "Built a Generative AI chatbot using Azure OpenAI Services and Azure AI Search with RAG architecture to ground GPT-4 Turbo on Chevron support data. Customers and Level 1 agents could instantly retrieve contextual answers. Result: 60% fewer incident escalations (support calls reduced from 3000+ to 1200 daily), SLA for escalations reduced by 80%, and annual support cost savings of $2M–$4M.",
+    "whatIBuilt": [
+      "Integrated 28 data sources (POS, Mobile Payments, Fraud System, Loyalty System, logs, transactional DBs).",
+      "Developed ETL pipelines for cleansing, preparation, and transformation into a data warehouse.",
+      "Provisioned Azure OpenAI Service, Azure AI Search, and configured search indexes (RAG).",
+      "Integrated the chatbot with Chevron Support Website and Mobile Apps.",
+      "Implemented feedback loops for reinforcement learning with human feedback (customers & support agents)."
+    ],
+    "challengesOvercome": [
+      "Built 28+ ETL integrations in a cost-effective, scalable way.",
+      "Added safeguards and guardrails to Azure OpenAI Chatbot to prevent jail-breaking and ensure customer PII protection."
+    ],
+    "reference": "https://www.wipro.com/oil-and-gas/articles/harnessing-ai-and-genai-to-transform-mobility-fuel-and-convenience-retail/"
+  },
+  {
+    "title": "Customer Segmentation for Personalized Promotions and Loyalty Offers",
+    "company": "Chevron",
+    "problem": "All customers were treated the same in loyalty campaigns, missing opportunities to target high-value customers while nurturing lower-value ones.",
+    "solutionImpact": "Built a customer segmentation model in Python categorizing users into Platinum, Gold, Silver, and Bronze tiers. Data was stored in Azure Data Lake and integrated into Salesforce Marketing Cloud. Personalized promotions improved engagement, retention, and boosted fuel + convenience store sales.",
+    "whatIBuilt": [
+      "Designed segmentation pipeline using Pandas, Scikit-learn, SQL preprocessing.",
+      "Applied clustering and rule-based thresholds for tiering customers.",
+      "Built ETL pipelines to Azure Data Lake for downstream marketing use.",
+      "Integrated segmentation outputs with Salesforce Marketing Cloud.",
+      "Developed dashboards for Chevron marketing teams to track KPIs."
+    ],
+    "challengesOvercome": [
+      "Resolved inconsistencies in mobile transaction data (duplicates, missing values).",
+      "Optimized pipelines to process millions of transactions monthly at scale.",
+      "Handled schema mismatches between Azure Data Lake and Salesforce Marketing Cloud.",
+      "Balanced machine-driven clustering with intuitive business tiers."
+    ],
+    "reference": ""
+  },
+  {
+    "title": "Real-Time Fraud & Anomaly Detection for Mobile Payments",
+    "company": "Chevron / Texaco / ExtraMile",
+    "problem": "Fuel and convenience store mobile payments required real-time fraud detection to prevent revenue leakage and compliance risks.",
+    "solutionImpact": "Integrated anomaly detection models and Azure OpenAI reasoning agents to flag suspicious activity in milliseconds. Reduced fraud losses and improved compliance with financial standards.",
+    "whatIBuilt": [
+      "Developed low-latency AI service layer connected to mobile/web apps.",
+      "Implemented APIs, real-time event streams, and Azure-based microservices."
+    ],
+    "challengesOvercome": [
+      "Balanced detection accuracy with sub-second response requirements.",
+      "Used vector databases (pgvector) and caching for scalable, low-latency performance."
+    ],
+    "reference": ""
+  },
+  {
+    "title": "AI-Driven Predictive Maintenance for Aerospace Engines",
+    "company": "Pratt & Whitney",
+    "problem": "Aircraft engines produce massive telemetry data requiring predictive insights to minimize unplanned downtime.",
+    "solutionImpact": "Deployed ML models (Spark + PyTorch) for anomaly detection and Remaining Useful Life (RUL) predictions. Improved fleet readiness and reduced unplanned maintenance.",
+    "whatIBuilt": [
+      "Built ingestion pipelines (Kafka, Hadoop, Spark) for telemetry streams.",
+      "Implemented ML scoring and anomaly detection models.",
+      "Developed BI dashboards with Power BI and SSRS for engineering analysis."
+    ],
+    "challengesOvercome": [
+      "Processed terabytes of time-series data with minimal lag.",
+      "Tuned distributed Spark jobs for efficiency.",
+      "Optimized feature engineering pipelines across multi-node clusters."
+    ],
+    "reference": ""
+  },
+  {
+    "title": "Intelligent Knowledgebase Assistant for Internal Applications",
+    "company": "Chevron",
+    "problem": "Support teams wasted time searching across SharePoint, Confluence, JIRA, and ServiceNow, slowing issue resolution and increasing support costs.",
+    "solutionImpact": "Built an AI-powered knowledge assistant using Azure OpenAI + RAG to unify fragmented knowledge. Enabled natural language Q&A for support staff, cutting resolution time and improving consistency.",
+    "whatIBuilt": [
+      "Built RAG pipeline with Azure OpenAI for contextual question answering.",
+      "Indexed SharePoint, Confluence, JIRA, and ServiceNow with Cognitive Search.",
+      "Integrated with Azure Storage Accounts for secure data and embeddings.",
+      "Connected APIs to internal support portals for real-time answers.",
+      "Implemented monitoring to track accuracy, latency, and adoption."
+    ],
+    "challengesOvercome": [
+      "Standardized unstructured data while preserving role-based permissions.",
+      "Reduced hallucinations with fine-tuned embeddings and prompt engineering.",
+      "Scaled for concurrent queries without latency issues.",
+      "Drove adoption with workshops and feedback loops for trust-building."
+    ],
+    "reference": ""
+  },
+  {
+    "title": "Conduct Inspections of Equipment at Refineries using Cognitive Services",
+    "company": "Chevron",
+    "problem": "Manual inspection of refinery equipment was costly and labor-intensive, costing millions annually.",
+    "solutionImpact": "Developed a mobile + wearable-enabled app to capture equipment images and videos, uploaded to cloud storage, and analyzed with Azure Cognitive Services. Predicted maintenance schedules from visual cues (e.g., rust, discoloration). Saved millions yearly in inspection costs.",
+    "whatIBuilt": [
+      "Implemented backend APIs for uploading media into cloud storage.",
+      "Provisioned and configured Azure Cognitive Services for image/video analysis.",
+      "Developed an inspector-facing admin portal for reviewing results."
+    ],
+    "challengesOvercome": [
+      "Integrated mobile app with wearable devices for seamless data capture.",
+      "Scaled processing for massive high-resolution images and long videos.",
+      "Improved model accuracy by fine-tuning Cognitive Services for refinery conditions.",
+      "Converted raw outputs into actionable predictive maintenance insights.",
+      "Enforced Chevron’s strict security and compliance requirements.",
+      "Overcame resistance to digital transition through user-focused design and ROI demonstration."
+    ],
+    "reference": ""
+  }
+]
+
 };

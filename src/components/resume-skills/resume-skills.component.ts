@@ -7,5 +7,5 @@ import { Component, Input } from '@angular/core';
   standalone: false
 })
 export class ResumeSkillsComponent {
-  @Input() skills!: string[];
+  @Input() skills!: any[];
 }

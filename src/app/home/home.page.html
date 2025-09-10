@@ -50,8 +50,12 @@
         <ion-label>Experience</ion-label>
       </ion-segment-button>
       <ion-segment-button value="careerHighlights">
-        <ion-icon name="briefcase-outline"></ion-icon>
+        <ion-icon name="trophy-outline"></ion-icon>
         <ion-label>Career Highlights</ion-label>
+      </ion-segment-button>
+      <ion-segment-button value="aiML">
+        <ion-icon name="analytics-outline"></ion-icon>
+        <ion-label>AI / ML Projects</ion-label>
       </ion-segment-button>
     </ion-segment>
   </ion-toolbar>
@@ -75,6 +79,10 @@
   <ng-container *ngIf="selectedSection === 'careerHighlights'">
     <pdf-viewer>
     </pdf-viewer>
+  </ng-container>
+  <ng-container *ngIf="selectedSection === 'aiML'">
+    <ai-ml-projects [aiMlProjects]="resume.aiMlProjects">
+    </ai-ml-projects>
   </ng-container>
 </ion-content>
 

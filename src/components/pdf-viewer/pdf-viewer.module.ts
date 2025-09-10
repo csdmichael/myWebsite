@@ -8,4 +8,8 @@ import { PDFViewerComponent } from './pdf-viewer.component';
   exports: [PDFViewerComponent],
   schemas: [ CUSTOM_ELEMENTS_SCHEMA ]
 })
-export class PDFViewerModule {}
+export class PDFViewerModule {
+  ngOnInit() {
+    console.log('PDF Viewer Module Initialized');
+  }
+}

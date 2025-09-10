@@ -1,9 +1,19 @@
+.section-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 16px;
+  h2 {
+    font-weight: 700;
+    font-size: 1.4rem;
+  }
+  .header-icon {
+    font-size: 28px;
+    color: var(--ion-color-primary);
+  }
+}
+
 ion-chip {
   margin: 4px;
   font-size: 0.9rem;
-  --padding-start: 10px;
-  --padding-end: 10px;
-  --background: var(--ion-color-primary-tint);
-  --color: #fff;
-  font-weight: 500;
 }
