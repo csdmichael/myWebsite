@@ -5,12 +5,13 @@
             [name]="resume.name"
             [headline]="resume.headline">
           </app-resume-header>
+    <app-resume-contact [contact]="resume.contact"></app-resume-contact>
   </ion-toolbar>
 </ion-header>
 
 <ion-content class="resume-background ion-padding">
   
-  <app-resume-contact [contact]="resume.contact"></app-resume-contact>
+  
 
   <!-- Tabs/Segments for navigation -->
   <ion-card>
@@ -60,12 +61,12 @@
       </app-resume-experiences>
     </ng-container>
     <ng-container *ngIf="selectedSection === 'careerHighlights'">
-      <pdf-viewer>
-      </pdf-viewer>
+      <app-pdf-viewer>
+      </app-pdf-viewer>
     </ng-container>
     <ng-container *ngIf="selectedSection === 'aiML'">
-      <ai-ml-projects [aiMlProjects]="resume.aiMlProjects">
-      </ai-ml-projects>
+      <app-ai-ml-projects [aiMlProjects]="resume.aiMlProjects">
+      </app-ai-ml-projects>
     </ng-container>
   </ion-card>
   
