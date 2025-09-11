@@ -113,7 +113,7 @@ export const RESUME_DATA: Resume = {
       {
         "degree": "AWS Certified AI Practitioner",
         "institution": "Amazon Web Services",
-        "graduationMonthYear": "Aug 2024",
+        "graduationMonthYear": "Aug 2025",
         "referenceUrl": "https://www.credly.com/badges/15381a33-6b27-49f6-8f4f-2beae0076582/linked_in_profile",
         "logoUrl": "../../assets/icon/certifications/AWS.png"
       },
@@ -125,80 +125,81 @@ export const RESUME_DATA: Resume = {
         "logoUrl": "../../assets/icon/certifications/Microsoft.png"
       },
       {
-        "degree": "MCSE – Azure Cloud",
+        "degree": "Microsoft® Certified Solutions Expert (MCSE) – Azure Cloud",
         "institution": "Microsoft",
-        "graduationMonthYear": "Apr 2024",
-        "referenceUrl": "",
-        "logoUrl": "../../assets/icon/certifications/Microsoft.png"
-      },
-      {
-        "degree": "PMP – Project Management Professional",
-        "institution": "Project Management Institute",
-        "graduationMonthYear": "Jul 2021",
-        "referenceUrl": "",
-        "logoUrl": "../../assets/icon/certifications/PMI.png"
-      },
-      {
-        "degree": "MCSD for .NET",
-        "institution": "Microsoft",
-        "graduationMonthYear": "Jan 2020",
-        "referenceUrl": "",
+        "graduationMonthYear": "Dec 2018",
+        "referenceUrl": "https://drive.google.com/file/d/1S7u6KdG2Y4XAhldgQ_H3GtSJeP_azUke/view?usp=sharing",
         "logoUrl": "../../assets/icon/certifications/Microsoft.png"
       },
       {
         "degree": "Sitecore Developer Certified",
         "institution": "Sitecore",
-        "graduationMonthYear": "Nov 2019",
-        "referenceUrl": "",
+        "graduationMonthYear": "Mar 2016",
+        "referenceUrl": "https://drive.google.com/file/d/1tFMCKryTbpPi4m6bW0Zu1ztbBEF5gt2f/view?usp=sharing",
         "logoUrl": "../../assets/icon/certifications/Sitecore.png"
       },
       {
         "degree": "AngularJS Certified",
         "institution": "Google",
         "graduationMonthYear": "Oct 2019",
-        "referenceUrl": "",
+        "referenceUrl": "https://drive.google.com/file/d/1Byz0COsaHQDdDSjBN7cBZfRJCZtuMHum/view?usp=sharing",
         "logoUrl": "../../assets/icon/certifications/Google.png"
       },
+      
       {
-        "degree": "MCITP – BI Developer & Maintenance",
+        "degree": "PMP – Project Management Professional",
+        "institution": "Project Management Institute",
+        "graduationMonthYear": "May 2013",
+        "referenceUrl": "https://drive.google.com/file/d/12NTGDNkZfv3jrSJNKCtGef2vHUX2ni33/view?usp=sharing",
+        "logoUrl": "../../assets/icon/certifications/PMI.png"
+      },
+      {
+        "degree": "Microsoft Certified IT Professional – BI Developer & Maintenance",
         "institution": "Microsoft",
-        "graduationMonthYear": "Dec 2018",
+        "graduationMonthYear": "Apr 2011",
+        "referenceUrl": "https://drive.google.com/file/d/1S7u6KdG2Y4XAhldgQ_H3GtSJeP_azUke/view?usp=sharing",
+        "logoUrl": "../../assets/icon/certifications/Microsoft.png"
+      },
+      {
+        "degree": "Microsoft Certified Tehnology Specialist (MCTS) – SQL Server 2005",
+        "institution": "Microsoft",
+        "graduationMonthYear": "Jul 2008",
+        "referenceUrl": "https://drive.google.com/file/d/1S7u6KdG2Y4XAhldgQ_H3GtSJeP_azUke/view?usp=sharing",
+        "logoUrl": "../../assets/icon/certifications/Microsoft.png"
+      },
+      {
+        "degree": "Microsoft Certified Tehnology Specialist (MCTS) – SharePoint Administration",
+        "institution": "Microsoft",
+        "graduationMonthYear": "Jun 2007",
         "referenceUrl": "",
         "logoUrl": "../../assets/icon/certifications/Microsoft.png"
       },
       {
-        "degree": "MCAD for .NET",
+        "degree": "Microsoft Certified Database Administrator (MCDBA) – SQL 2005",
         "institution": "Microsoft",
-        "graduationMonthYear": "Dec 2017",
-        "referenceUrl": "",
+        "graduationMonthYear": "May 2006",
+        "referenceUrl": "https://drive.google.com/file/d/1S7u6KdG2Y4XAhldgQ_H3GtSJeP_azUke/view?usp=sharing",
         "logoUrl": "../../assets/icon/certifications/Microsoft.png"
       },
       {
-        "degree": "MCTS – SharePoint Administration",
+        "degree": "Microsoft Certified Solutions Developer (MCSD) – .NET",
         "institution": "Microsoft",
-        "graduationMonthYear": "Jun 2017",
-        "referenceUrl": "",
+        "graduationMonthYear": "Mar 2006",
+        "referenceUrl": "https://drive.google.com/file/d/1S7u6KdG2Y4XAhldgQ_H3GtSJeP_azUke/view?usp=sharing",
         "logoUrl": "../../assets/icon/certifications/Microsoft.png"
       },
       {
-        "degree": "MCDBA – SQL 2005",
+        "degree": "Microsoft Certified Application Developer (MCAD) - .NET",
         "institution": "Microsoft",
-        "graduationMonthYear": "Jun 2016",
-        "referenceUrl": "",
+        "graduationMonthYear": "Jan 2006",
+        "referenceUrl": "https://drive.google.com/file/d/1S7u6KdG2Y4XAhldgQ_H3GtSJeP_azUke/view?usp=sharing",
         "logoUrl": "../../assets/icon/certifications/Microsoft.png"
       },
       {
-        "degree": "MCTS – SQL Server 2005",
+        "degree": "Microsoft Certified Professional (MCP) – Web Development",
         "institution": "Microsoft",
-        "graduationMonthYear": "Jun 2016",
-        "referenceUrl": "",
-        "logoUrl": "../../assets/icon/certifications/Microsoft.png"
-      },
-      {
-        "degree": "MCP – Web Development",
-        "institution": "Microsoft",
-        "graduationMonthYear": "Mar 2015",
-        "referenceUrl": "",
+        "graduationMonthYear": "Dec 2005",
+        "referenceUrl": "https://drive.google.com/file/d/1S7u6KdG2Y4XAhldgQ_H3GtSJeP_azUke/view?usp=sharing",
         "logoUrl": "../../assets/icon/certifications/Microsoft.png"
       }
   ],
