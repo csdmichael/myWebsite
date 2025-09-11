@@ -89,7 +89,7 @@ export const RESUME_DATA: Resume = {
     {
       degree: 'Professional Certificate in Artifical Intelligence (AI) and Machine Learning (ML)',
       institution: 'Berkeley University of California (UC Berkeley) - School of Information',
-      graduationMonthYear: 'Mar 2016',
+      graduationMonthYear: 'Mar 2026 (In Progress)',
       referenceUrl: 'https://em-executive.berkeley.edu/professional-certificate-machine-learning-artificial-intelligence',
       logoUrl: '../../assets/icon/education/berkeleyUniv.png'
     },
