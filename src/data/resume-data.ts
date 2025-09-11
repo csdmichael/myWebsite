@@ -141,7 +141,7 @@ export const RESUME_DATA: Resume = {
       {
         "degree": "AngularJS Certified",
         "institution": "Google",
-        "graduationMonthYear": "Oct 2019",
+        "graduationMonthYear": "Apr 2017",
         "referenceUrl": "https://drive.google.com/file/d/1Byz0COsaHQDdDSjBN7cBZfRJCZtuMHum/view?usp=sharing",
         "logoUrl": "../../assets/icon/certifications/Google.png"
       },
