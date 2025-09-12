@@ -2,10 +2,11 @@
   <ion-item *ngFor="let cert of certifications">
     <ion-grid>
         <ion-row>
-          <ion-col size="2" class="ion-text-center">
+          <ion-col size="2">
             <img [src]="cert.logoUrl" alt="{{ cert.institution }}" style="max-width: 100px; max-height: 50px; object-fit: contain;" />
           </ion-col>
-          <ion-col size="10">
+          <ion-col size="1"></ion-col>
+          <ion-col size="9">
             <ion-label>
               <strong>{{ cert.degree }}</strong><br/>
               {{ cert.institution }}<br />
