@@ -138,17 +138,17 @@ export const RESUME_DATA: Resume = {
       },
       {
         "degree": "Azure OpenAI for Pharma",
-        "institution": "Microsoft",
+        "institution": "Microsoft - Wipro",
         "graduationMonthYear": "Aug 2025",
         "referenceUrl": "https://drive.google.com/file/d/1SwpYqP0vQFYT9DIZlt-yy725MQKCLAxD/view?usp=sharing",
-        "logoUrl": "../../assets/icon/institutions/Microsoft.png"
+        "logoUrl": "../../assets/icon/institutions/Wipro.png"
       },
       {
         "degree": "Azure OpenAI for Healthcare",
-        "institution": "Microsoft",
+        "institution": "Microsoft - Wipro",
         "graduationMonthYear": "Aug 2025",
         "referenceUrl": "https://drive.google.com/file/d/1VaL3eCXvLCv-Fc8_tDYNTNwnCYmjGfy6/view?usp=sharing",
-        "logoUrl": "../../assets/icon/institutions/Microsoft.png"
+        "logoUrl": "../../assets/icon/institutions/Wipro.png"
       },
       {
         "degree": "Fundamentals of Azure OpenAI Service",
