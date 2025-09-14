@@ -13,7 +13,7 @@ export const RESUME_DATA: Resume = {
     phone: '860-706-2742'
   },
   summary: [
-    '21+ years of professional experience in architecture, analysis, design, and development of applications across Cloud, Mobility, Web, Databases, and AI/ML.',
+    'Higly experienced in architecture, analysis, design, and development of applications across Cloud, Mobility, Web, Databases, and AI/ML.',
   'Expertise leading onshore and offshore teams, delivering enterprise solutions for Fortune 500 clients.',
   'Proven track record in AI (chatbots, fraud detection, customer segmentation, agentic AI), full-stack (Angular, React, ASP.NET Core, Ionic), and cloud (Azure, AWS, GCP).', 
   'Strong focus on performance, scalability, security, and user experience.',
@@ -43,16 +43,18 @@ export const RESUME_DATA: Resume = {
   ],
   'AI & ML': [
     'Azure OpenAI Service',
+    'Azure AI Foundry',
+    'Agentic AI (AutoGen, CrewAI)',
+    'Azure ML Studio',
+    'Azure Cognitive Services',
+    'Google Vertex AI',
     'LangChain',
     'LangGraph',
     'TensorFlow',
     'PyTorch',
-    'Agentic AI (AutoGen, CrewAI)',
-    'Azure ML Studio',
     'AWS SageMaker',
     'AWS Bedrock',
     'Generative AI & Prompt Engineering',
-    'Azure Cognitive Services'
   ],
   'Databases': [
     'SQL Azure',
@@ -271,9 +273,9 @@ export const RESUME_DATA: Resume = {
         'Implemented CI/CD with Azure DevOps, pipelines for mobile (iOS/Android) and backend deployments using Ansible.'
       ],
       technologies: [
-        'Azure OpenAI', 'Python', 'TensorFlow', 'LangChain', 'LangGraph', 'AutoGen',
-        'Angular', 'React', 'Ionic', 'ASP.NET Core', 'SQL Azure', 'Databricks',
-        'Azure Functions', 'Azure FrontDoor', 'Redis Cache', 'Azure DevOps', 'Ansible'
+        'Azure OpenAI', 'Python', 'TensorFlow', 'LangChain', 'LangGraph', 'AutoGen', 'Azure AI Foundry',
+        'Ionic', 'Angular', 'TypeScript', 'React', 'ASP.NET Core', 'SQL Azure', 'Databricks',
+        'Azure Functions', 'Azure FrontDoor', 'Redis Cache', 'Azure DevOps', 'Ansible', 'C#', 'Python'
       ]
     },
     {
@@ -289,7 +291,7 @@ export const RESUME_DATA: Resume = {
         'Built distributed ETL pipelines with Apache Spark, Hadoop, and Azure Data Factory.',
         'Designed BI dashboards and reporting systems using SSRS, SSAS, PerformancePoint.'
       ],
-      technologies: ['Ionic', 'Xamarin', 'AngularJS', 'ASP.NET Core', 'Azure Data Factory', 'Databricks', 'Apache Spark', 'SharePoint']
+      technologies: ['Ionic', 'Xamarin', 'AngularJS', 'React', 'ASP.NET Core', 'C#', 'SQL Azure', 'Azure Data Factory', 'Databricks', 'Apache Spark', 'SharePoint']
     },
     {
       title: 'Senior Technical Architect / Developer',
@@ -304,7 +306,7 @@ export const RESUME_DATA: Resume = {
         'Migrated IIS and classic ASP apps to Azure Cloud.',
         'Built BI and reporting for HR and law case apps.'
       ],
-      technologies: ['Sitecore', 'Azure Cloud', 'SQL Azure', 'SharePoint', 'FusionCharts', 'ASP.NET MVC']
+      technologies: ['Sitecore', 'Azure Cloud', 'SQL Azure', 'SharePoint', 'FusionCharts', 'ASP.NET MVC', 'C#']
     },
     {
       title: 'Senior Technical Architect / Developer',
