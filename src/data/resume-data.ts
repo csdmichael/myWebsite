@@ -154,6 +154,13 @@ export const RESUME_DATA: Resume = {
         "logoUrl": "../../assets/icon/institutions/Wipro.png"
       },
       {
+        "degree": "Best D&C Consultant Award in Energy Domain FY 2024/2025",
+        "institution": "Wipro",
+        "graduationMonthYear": "Apr 2025",
+        "referenceUrl": "https://drive.google.com/file/d/1k1piw3SZ1-3k95lz4xol9sUCLOpwyBhD/view?usp=sharing",
+        "logoUrl": "../../assets/icon/institutions/Wipro.png"
+      },
+      {
         "degree": "Fundamentals of Azure OpenAI Service",
         "institution": "Microsoft",
         "graduationMonthYear": "May 2024",
