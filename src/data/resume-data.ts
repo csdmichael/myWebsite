@@ -57,6 +57,7 @@ export const RESUME_DATA: Resume = {
   'Databases': [
     'SQL Azure',
     'SQL Server (SSIS, SSRS, SSAS)',
+    'Redis Cache',
     'Oracle',
     'MongoDB',
     'Databricks',
@@ -77,7 +78,9 @@ export const RESUME_DATA: Resume = {
     'Azure DevOps',
     'Ansible',
     'CloudFormation',
-    'CI/CD Pipelines'
+    'CI/CD Pipelines',
+    'Git/GitHub',
+    'Terraform'
   ],
   'Other': [
     'Agile (Scrum, Kanban)',
