@@ -8,4 +8,5 @@ import { Component, Input } from '@angular/core';
 })
 export class ResumeSummaryComponent {
   @Input() summary!: string;
+  @Input() linkedInUrl!: string;
 }

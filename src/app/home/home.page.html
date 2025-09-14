@@ -58,7 +58,7 @@
   <!-- Conditionally render sections based on selected tab -->
   <ion-card *ngIf="resume">
     <ng-container *ngIf="selectedSection === 'summary'">
-      <app-resume-summary [summary]="resume.summary"></app-resume-summary>
+      <app-resume-summary [summary]="resume.summary" [linkedInUrl]="resume.linkedin"></app-resume-summary>
     </ng-container>
 
     <ng-container *ngIf="selectedSection === 'skills'">
