@@ -83,7 +83,12 @@ export const RESUME_DATA: Resume = {
     'Agile (Scrum, Kanban)',
     'Waterfall',
     'UX Design',
-    'Microservices Architecture'
+    'Microservices Architecture',
+    'RESTful APIs',
+    'GraphQL',
+    'Docker',
+    'Kubernetes',
+    'Apache Kafka'
   ]},
   education: [
     {
@@ -115,35 +120,70 @@ export const RESUME_DATA: Resume = {
         "institution": "Amazon Web Services",
         "graduationMonthYear": "Aug 2025",
         "referenceUrl": "https://www.credly.com/badges/15381a33-6b27-49f6-8f4f-2beae0076582/linked_in_profile",
-        "logoUrl": "../../assets/icon/certifications/AWS.png"
+        "logoUrl": "../../assets/icon/institutions/AWS.png"
+      },
+      {
+        "degree": "Google Cloud - GenAI Agents",
+        "institution": "Google",
+        "graduationMonthYear": "Aug 2025",
+        "referenceUrl": "https://drive.google.com/file/d/1KDsWSsQF0DjfN1QBJJuqUaLm_6YaPCJ3/view?usp=sharing",
+        "logoUrl": "../../assets/icon/institutions/Google.png"
+      },
+      {
+        "degree": "Apache Kafka",
+        "institution": "Apache",
+        "graduationMonthYear": "Aug 2025",
+        "referenceUrl": "https://drive.google.com/file/d/1FycwKojTbB2ghRRLQibNHSFpytSH174f/view?usp=sharing",
+        "logoUrl": "../../assets/icon/institutions/Apache.png"
+      },
+      {
+        "degree": "Azure OpenAI for Pharma",
+        "institution": "Microsoft",
+        "graduationMonthYear": "Aug 2025",
+        "referenceUrl": "https://drive.google.com/file/d/1SwpYqP0vQFYT9DIZlt-yy725MQKCLAxD/view?usp=sharing",
+        "logoUrl": "../../assets/icon/institutions/Microsoft.png"
+      },
+      {
+        "degree": "Azure OpenAI for Healthcare",
+        "institution": "Microsoft",
+        "graduationMonthYear": "Aug 2025",
+        "referenceUrl": "https://drive.google.com/file/d/1VaL3eCXvLCv-Fc8_tDYNTNwnCYmjGfy6/view?usp=sharing",
+        "logoUrl": "../../assets/icon/institutions/Microsoft.png"
       },
       {
         "degree": "Fundamentals of Azure OpenAI Service",
         "institution": "Microsoft",
         "graduationMonthYear": "May 2024",
-        "referenceUrl": "",
-        "logoUrl": "../../assets/icon/certifications/Microsoft.png"
+        "referenceUrl": "https://drive.google.com/file/d/1pLGCuTUC4HBKhy2SyiOgbaK-bPqi4LoB/view?usp=sharing",
+        "logoUrl": "../../assets/icon/institutions/Microsoft.png"
+      },
+      {
+        "degree": "Scrum Fundamentals",
+        "institution": "TechMahindra",
+        "graduationMonthYear": "Oct 2019",
+        "referenceUrl": "https://drive.google.com/file/d/1jhkDmdUy25VcYqso2ALRObBnbbI8TSIT/view?usp=sharing",
+        "logoUrl": "../../assets/icon/institutions/Techmahindra.png"
       },
       {
         "degree": "Microsoft® Certified Solutions Expert (MCSE) – Azure Cloud",
         "institution": "Microsoft",
         "graduationMonthYear": "Dec 2018",
-        "referenceUrl": "https://drive.google.com/file/d/1S7u6KdG2Y4XAhldgQ_H3GtSJeP_azUke/view?usp=sharing",
-        "logoUrl": "../../assets/icon/certifications/Microsoft.png"
+        "referenceUrl": "https://drive.google.com/file/d/1Qr8AkaPcKq6Vh5LEQtLiGub7I5p84SRD/view?usp=sharing",
+        "logoUrl": "../../assets/icon/institutions/Microsoft.png"
       },
       {
         "degree": "Sitecore Developer Certified",
         "institution": "Sitecore",
         "graduationMonthYear": "Mar 2016",
         "referenceUrl": "https://drive.google.com/file/d/1tFMCKryTbpPi4m6bW0Zu1ztbBEF5gt2f/view?usp=sharing",
-        "logoUrl": "../../assets/icon/certifications/Sitecore.png"
+        "logoUrl": "../../assets/icon/institutions/Sitecore.png"
       },
       {
         "degree": "AngularJS Certified",
         "institution": "Google",
         "graduationMonthYear": "Apr 2017",
         "referenceUrl": "https://drive.google.com/file/d/1Byz0COsaHQDdDSjBN7cBZfRJCZtuMHum/view?usp=sharing",
-        "logoUrl": "../../assets/icon/certifications/Google.png"
+        "logoUrl": "../../assets/icon/institutions/Google.png"
       },
       
       {
@@ -151,56 +191,56 @@ export const RESUME_DATA: Resume = {
         "institution": "Project Management Institute",
         "graduationMonthYear": "May 2013",
         "referenceUrl": "https://drive.google.com/file/d/12NTGDNkZfv3jrSJNKCtGef2vHUX2ni33/view?usp=sharing",
-        "logoUrl": "../../assets/icon/certifications/PMI.png"
+        "logoUrl": "../../assets/icon/institutions/PMI.png"
       },
       {
         "degree": "Microsoft Certified IT Professional – BI Developer & Maintenance",
         "institution": "Microsoft",
         "graduationMonthYear": "Apr 2011",
         "referenceUrl": "https://drive.google.com/file/d/1S7u6KdG2Y4XAhldgQ_H3GtSJeP_azUke/view?usp=sharing",
-        "logoUrl": "../../assets/icon/certifications/Microsoft.png"
+        "logoUrl": "../../assets/icon/institutions/Microsoft.png"
       },
       {
         "degree": "Microsoft Certified Tehnology Specialist (MCTS) – SQL Server 2005",
         "institution": "Microsoft",
         "graduationMonthYear": "Jul 2008",
         "referenceUrl": "https://drive.google.com/file/d/1S7u6KdG2Y4XAhldgQ_H3GtSJeP_azUke/view?usp=sharing",
-        "logoUrl": "../../assets/icon/certifications/Microsoft.png"
+        "logoUrl": "../../assets/icon/institutions/Microsoft.png"
       },
       {
         "degree": "Microsoft Certified Tehnology Specialist (MCTS) – SharePoint Administration",
         "institution": "Microsoft",
         "graduationMonthYear": "Jun 2007",
         "referenceUrl": "",
-        "logoUrl": "../../assets/icon/certifications/Microsoft.png"
+        "logoUrl": "../../assets/icon/institutions/Microsoft.png"
       },
       {
         "degree": "Microsoft Certified Database Administrator (MCDBA) – SQL 2005",
         "institution": "Microsoft",
         "graduationMonthYear": "May 2006",
         "referenceUrl": "https://drive.google.com/file/d/1S7u6KdG2Y4XAhldgQ_H3GtSJeP_azUke/view?usp=sharing",
-        "logoUrl": "../../assets/icon/certifications/Microsoft.png"
+        "logoUrl": "../../assets/icon/institutions/Microsoft.png"
       },
       {
         "degree": "Microsoft Certified Solutions Developer (MCSD) – .NET",
         "institution": "Microsoft",
         "graduationMonthYear": "Mar 2006",
         "referenceUrl": "https://drive.google.com/file/d/1S7u6KdG2Y4XAhldgQ_H3GtSJeP_azUke/view?usp=sharing",
-        "logoUrl": "../../assets/icon/certifications/Microsoft.png"
+        "logoUrl": "../../assets/icon/institutions/Microsoft.png"
       },
       {
         "degree": "Microsoft Certified Application Developer (MCAD) - .NET",
         "institution": "Microsoft",
         "graduationMonthYear": "Jan 2006",
         "referenceUrl": "https://drive.google.com/file/d/1S7u6KdG2Y4XAhldgQ_H3GtSJeP_azUke/view?usp=sharing",
-        "logoUrl": "../../assets/icon/certifications/Microsoft.png"
+        "logoUrl": "../../assets/icon/institutions/Microsoft.png"
       },
       {
         "degree": "Microsoft Certified Professional (MCP) – Web Development",
         "institution": "Microsoft",
         "graduationMonthYear": "Dec 2005",
         "referenceUrl": "https://drive.google.com/file/d/1S7u6KdG2Y4XAhldgQ_H3GtSJeP_azUke/view?usp=sharing",
-        "logoUrl": "../../assets/icon/certifications/Microsoft.png"
+        "logoUrl": "../../assets/icon/institutions/Microsoft.png"
       }
   ],
 
@@ -208,7 +248,7 @@ export const RESUME_DATA: Resume = {
     {
       title: 'Principal Full Stack & AI Software Engineer (Mobility & Cloud)',
       company: 'Wipro Technologies / TechMahindra – Client: Chevron',
-      companyLogo: '../../assets/icon/companies/Chevron.png',
+      companyLogo: '../../assets/icon/institutions/Chevron.png',
       startDate: 'Oct 2019',
       endDate: 'Present',
       summary: 'Led enterprise mobility and AI initiatives at Chevron, building mobile, web, and AI/ML applications.',
@@ -229,7 +269,7 @@ export const RESUME_DATA: Resume = {
     {
       title: 'Senior Technical Architect (Cloud, Mobility, Data, BI, SharePoint)',
       company: 'Virtusa – Client: Pratt & Whitney',
-      companyLogo: '../../assets/icon/companies/PrattAndWhitney.png',
+      companyLogo: '../../assets/icon/institutions/PrattAndWhitney.png',
       startDate: 'Jun 2016',
       endDate: 'Oct 2019',
       summary: 'Architected and developed mobile apps and led SharePoint cloud migration projects.',
@@ -244,7 +284,7 @@ export const RESUME_DATA: Resume = {
     {
       title: 'Senior Technical Architect / Developer',
       company: 'KaizenTek – Client: Day Pitney LLP',
-      companyLogo: '../../assets/icon/companies/DayPitney.png',
+      companyLogo: '../../assets/icon/institutions/DayPitney.png',
       startDate: 'May 2015',
       endDate: 'Jun 2016',
       summary: 'Led Sitecore public website and SharePoint portal development.',
@@ -259,7 +299,7 @@ export const RESUME_DATA: Resume = {
     {
       title: 'Senior Technical Architect / Developer',
       company: 'KaizenTek – Client: State of Connecticut (CJIS)',
-      companyLogo: '../../assets/icon/companies/CJIS.png',
+      companyLogo: '../../assets/icon/institutions/CJIS.png',
       startDate: 'Jan 2014',
       endDate: 'Apr 2015',
       summary: 'Built and maintained Connecticut Information Sharing System.',
@@ -274,7 +314,7 @@ export const RESUME_DATA: Resume = {
     {
       title: 'Senior Technical Architect / Developer',
       company: 'KaizenTek – Client: Merck Pharmaceutical',
-      companyLogo: '../../assets/icon/companies/Merck.png',
+      companyLogo: '../../assets/icon/institutions/Merck.png',
       startDate: 'Sep 2012',
       endDate: 'Dec 2014',
       summary: 'Delivered BI dashboards, migrated portals to Azure, built ETL pipelines.',
@@ -289,7 +329,7 @@ export const RESUME_DATA: Resume = {
     {
       title: 'Senior Developer',
       company: 'ITWorx – Client: Somers School District (NY)',
-      companyLogo: '../../assets/icon/companies/SomersSchoolDistrict.png',
+      companyLogo: '../../assets/icon/institutions/SomersSchoolDistrict.png',
       startDate: 'Jun 2011',
       endDate: 'Aug 2012',
       summary: 'Built education dashboards and migrated Connected Learning Gateway to Azure.',
@@ -303,7 +343,7 @@ export const RESUME_DATA: Resume = {
     {
       title: 'Senior Developer',
       company: 'ITWorx – Client: United Technologies (UTC)',
-      companyLogo: '../../assets/icon/companies/UTC.png',
+      companyLogo: '../../assets/icon/institutions/UTC.png',
       startDate: 'Sep 2006',
       endDate: 'May 2011',
       summary: 'Developed BI dashboards, Sarbanes-Oxley tools, and supported SharePoint/SQL environments.',
@@ -318,7 +358,7 @@ export const RESUME_DATA: Resume = {
     {
       title: 'Software Engineer',
       company: 'ITWorx – Clients: POET EMS & RMS Insurance',
-      companyLogo: '../../assets/icon/companies/ITWorx.png',
+      companyLogo: '../../assets/icon/institutions/ITWorx.png',
       startDate: 'Aug 2004',
       endDate: 'Aug 2006',
       summary: 'Developed CMS and insurance workflow systems.',
