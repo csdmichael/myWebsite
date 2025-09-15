@@ -12,7 +12,8 @@
             <ion-label>
               <strong>{{ exp.title }}</strong> <br/>
               {{ exp.company }}<br/>
-              {{ exp.startDate }} - {{ exp.endDate }}
+              {{ exp.startDate }} - {{ exp.endDate }} <br/>
+              <span *ngIf="exp.location" style="color: gray;">{{ exp.location }}</span>
             </ion-label>
           </ion-col>
         </ion-row>  

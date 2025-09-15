@@ -7,6 +7,7 @@ export interface ExperienceItem {
   title: string;
   company: string;
   companyLogo: string;
+  location?: string;
   startDate?: string;
   endDate?: string;
   summary?: string;
